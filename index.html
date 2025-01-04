@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="output.css" />
+
+    <style>
+      @font-face {
+        font-family: "harry-potter"; /* Name you will use to reference the font */
+        src: url("./font//HARRYP__.TTF");
+      }
+
+      /* Define the vibrating animation */
+      @keyframes vibration {
+        0% {
+          transform: translateY(0);
+        }
+        25% {
+          transform: translateY(-5px); /* Move left */
+        }
+        50% {
+          transform: translateX(5px); /* Move right */
+        }
+        75% {
+          transform: translateX(-5px); /* Move left */
+        }
+        100% {
+          transform: translateY(0); /* Return to the original position */
+        }
+      }
+
+      /* Apply the animation to the h1 element */
+      .vibrate {
+        display: block;
+        text-align: center;
+        animation: vibration 5s linear infinite; /* Vibration animation */
+      }
+    </style>
+    <title>HARRY POTTER || BOOKS IN HINDI || MOVIES IN HINDI</title>
+  </head>
+  <body>
+    <div
+      class="h-screen w-full relative bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.8)),url('./images/hero-banner.jpg')] bg-cover bg-center"
+    >
+      <nav
+        class="md:bg-[#40d2f3]/15 bg-[#40d2f3]/15 z-50 md:top-5 top-5 md:left-96 left-6 absolute md:w-1/3 w-80 rounded-[25px] p-4"
+      >
+        <ul class="text-white flex flex-row justify-between w-full">
+          <li
+            class="font-[harry-potter] cursor-pointer md:text-xl text-sm hover:text-gray-400"
+          >
+            <a href="#" class="no-underline md:text-white">HOME</a>
+          </li>
+          <li
+            class="font-[harry-potter] cursor-pointer md:text-xl text-sm hover:text-gray-400"
+          >
+            <a href="#movies" class="no-underline md:text-white">MOVIES</a>
+          </li>
+
+          <li
+            class="cursor-pointer font-[harry-potter] md:text-xl text-sm hover:text-gray-400"
+          >
+            <a href="#pdf" class="no-underline md:text-white">PDF'S</a>
+          </li>
+          <li
+            class="cursor-pointer font-[harry-potter] md:text-xl text-sm hover:text-gray-400"
+          >
+            WALLPAPERS
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Heading -->
+      <h1
+        class="font-[harry-potter] md:text-[6rem] text-6xl text-white absolute z-10 top-[55vh] md:left-1/4 left-10 vibrate"
+        id="#"
+      >
+        HARRY POTTER
+      </h1>
+    </div>
+
+    <div id="movies" class="bg-[#012B30] p-4">
+      <h2
+        class="font-[harry-potter] text-[2.5rem] text-center text-white pt-5 pb-5 vibrate"
+      >
+        MOVIES
+      </h2>
+      <div
+        class="grid md:grid-cols-3 grid-cols-1 gap-2 w-[80%] m-auto bg-[#00171C] p-10"
+      >
+        <div class="w-full">
+          <iframe
+            src="https://drive.google.com/file/d/1Prwo6o9PpigXZ6TfSBRLq9YKJhXF1e_Y/preview"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+            class="h-[80%] w-full"
+          ></iframe>
+          <h2 class="text-white">1- PILOSOPHER STONE</h2>
+        </div>
+
+        <div class="w-full">
+          <iframe
+            src="https://drive.google.com/file/d/1RU4VSmOkltI_qWGAb5XSbDeRqcYu0Q58/preview"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+            class="h-[80%] w-full"
+          ></iframe>
+          <h2 class="text-white">2- CHAMBER OF SECRETS</h2>
+        </div>
+
+        <div class="w-full">
+          <iframe
+            src="https://drive.google.com/file/d/1i_9KINNHdeduvtb1mTD93aZqAYWuXqoJ/preview"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+            class="h-[80%] w-full"
+          ></iframe>
+          <h2 class="text-white">3- PRISONER OF AZKABAN</h2>
+        </div>
+
+        <div class="w-full">
+          <a
+            href="https://www.watch-movies.com.pk/harry-potter-and-the-goblet-of-fire-2005-hindi-dubbed-full-movie/"
+          >
+            <img
+              src="https://images3.alphacoders.com/113/1130062.jpg"
+              class="h-[80%] w-full"
+            />
+          </a>
+
+          <h2 class="text-white">4- GOBLET OF FIRE</h2>
+        </div>
+
+        <div class="w-full">
+          <iframe
+            src="https://drive.google.com/file/d/1OASYVlxlDZavdpa3_OGui3Yl8NuW29EV/preview"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+            class="h-[80%] w-full"
+          ></iframe>
+          <h2 class="text-white">5- ORDER OF PHOINIX</h2>
+        </div>
+
+        <div class="w-full">
+          <a
+            href="https://www.watch-movies.com.pk/harry-potter-and-the-half-blood-prince-2009-free/"
+          >
+            <img
+              src="https://wallpapers.com/images/hd/the-half-blood-prince-1902-x-1079-wallpaper-siwn3cqzny76sgoc.jpg"
+              class="h-[80%] w-full"
+            />
+          </a>
+
+          <h2 class="text-white">6- HALF BLOOD PRICE</h2>
+        </div>
+
+        <div class="w-full">
+          <a
+            href=" https://www.watch-movies.com.pk/harry-potter-and-the-deathly-hallows-part-1-2010-hindi-dubbed-full-movie-free/"
+          >
+            <img
+              src="https://4kwallpapers.com/images/walls/thumbs_2t/18951.jpg"
+              allow="autoplay; fullscreen"
+            />
+          </a>
+
+          <h2 class="text-white">7- DEADLY HALLOWS-1</h2>
+        </div>
+
+        <div class="w-full">
+          <iframe
+            src="https://drive.google.com/file/d/13bApnwQDk33NMoUm8IeNVjCjFN-TteZf/preview"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+            class="h-[80%] w-full"
+          ></iframe>
+          <h2 class="text-white">8- DEADLY HALLOWS-2</h2>
+        </div>
+      </div>
+    </div>
+
+    <div id="pdf" class="bg-[#012B30] p-4">
+      <h2
+        class="font-[harry-potter] text-[2.5rem] text-center text-white pt-5 pb-5 vibrate"
+      >
+        PDF'S
+      </h2>
+      <div
+        class="grid md:grid-cols-2 grid-cols-1 gap-3 w-[80%] m-auto bg-[#00171C] p-10"
+      >
+        <div class="w-full">
+          <img
+            src="https://images8.alphacoders.com/113/1130049.jpg"
+            class="h-full w-full"
+          />
+        </div>
+
+        <div class="w-full flex flex-col justify-between items-center p-2">
+          <h2 class="font-[harry-potter] text-2xl text-yellow-300">1- PHILOSOPHER STONE</h2>
+
+          <p class="text-white">
+            HARRY POTTER IS INVITED IN HOGWARDS SCHOOL OF WIDARDLY AND WITCH
+            CRAF AND THERE HE FINDS OUT A MYSTERY OF STONE WHICH HAS POWER TO
+            KEEP A PERSON ALIVE
+          </p>
+
+          <div class="grid grid-cols-2 gap-2">
+            <a href="./BOOKS/URDU/1.pdf" download="1.pdf">
+              <button
+                class="text-white border-l bg-[#05060A] p-2 hover:bg-black/50"
+              >
+                Download PDF URDU
+              </button>
+            </a>
+            <a
+              href="./BOOKS/ENGLISH/J.K. Rowling - HP 1 - Harry Potter and the Sorcerer's Stone.pdf"
+              download="J.K. Rowling - HP 1 - Harry Potter and the Sorcerer's Stone.pdf"
+            >
+              <button
+                class="text-white border-l bg-[#05060A] p-2 hover:bg-black/50"
+              >
+                Download PDF IN ENG>
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="w-full">
+          <img src="images/hero-banner.jpg" class="h-full w-full" />
+        </div>
+
+        <div class="w-full flex flex-col justify-between items-center p-2">
+          <h2 class="font-[harry-potter] text-2xl text-yellow-300">2- CHAMBER OF SECRETS</h2>
+
+          <p class="text-white">
+            A SECRET CHAMBER IS OPENED INSIDE HOGWARDS WHICH MAY HAVE A
+            MYSTERIOUS ANIMAL LIVING INSIDE IT
+          </p>
+
+          <div class="grid grid-cols-2 gap-2">
+            <a href="./BOOKS/URDU/2.pdf" download="2.pdf">
+              <button
+                class="text-white border-l bg-[#05060A] p-2 hover:bg-black/50"
+              >
+                Download PDF URDU
+              </button>
+            </a>
+            <a
+              href="./BOOKS/ENGLISH/J.K. Rowling - HP 2 - Harry Potter and the Chamber of Secrets.pdf"
+              download="J.K. Rowling - HP 2 - Harry Potter and the Chamber of Secrets.pdf"
+            >
+              <button
+                class="text-white border-l bg-[#05060A] p-2 hover:bg-black/50"
+              >
+                Download PDF IN ENG>
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="w-full">
+          <img
+            src="https://www.teenidols4you.com/blink/Actors/emma_watson/Pdvd_490dr.jpg"
+            class="h-full w-full"
+          />
+        </div>
+
+        <div class="w-full flex flex-col justify-between items-center p-2">
+          <h2 class="font-[harry-potter] text-2xl text-yellow-300">3- PRISONER OF AZKABAN</h2>
+
+          <p class="text-white">
+            HARRY LIFE IS IN DANGER BECAUSE A PRISONER FROM AZKABAN JAIL HAS
+            BEEN EXCAPED
+          </p>
+
+          <div class="grid grid-cols-2 gap-2">
+            <a href="./BOOKS/URDU/3.pdf" download="3.pdf">
+              <button
+                class="text-white border-l bg-[#05060A] p-2 hover:bg-black/50"
+              >
+                Download PDF URDU
+              </button>
+            </a>
+            <a
+              href="./BOOKS/ENGLISH/J.K. Rowling - HP 3 - Harry Potter and the Prisoner of Azkaban.pdf"
+              download="J.K. Rowling - HP 3 - Harry Potter and the Prisoner of Azkaban.pdf"
+            >
+              <button
+                class="text-white border-l bg-[#05060A] p-2 hover:bg-black/50"
+              >
+                Download PDF IN ENG>
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="w-full">
+          <img
+            src="https://images.plex.tv/photo?size=large-1920&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2F2%2Fgracenote%2F22d1314532323dd241f7b0eaed2f897c.jpg"
+            class="h-full w-full"
+          />
+        </div>
+
+        <div class="w-full flex flex-col justify-between items-center p-2">
+          <h2 class="font-[harry-potter] text-2xl text-yellow-300">4- GOBLET OF FIRE</h2>
+
+          <p class="text-white">
+            HARRY NAME WAS PLACED INSIDE A GOBLET OF FIRE AND HE HAD TO TOOK
+            PART IN GAME
+          </p>
+
+          <div class="grid grid-cols-2 gap-2">
+            <a href="./BOOKS/URDU/4.pdf" download="4.pdf">
+              <button
+                class="text-white border-l bg-[#05060A] p-2 hover:bg-black/50"
+              >
+                Download PDF URDU
+              </button>
+            </a>
+            <a
+              href="./BOOKS/ENGLISH/J.K. Rowling - HP 4 - Harry Potter and the Goblet of Fire.pdf"
+              download="J.K. Rowling - HP 4 - Harry Potter and the Goblet of Fire.pdf"
+            >
+              <button
+                class="text-white border-l bg-[#05060A] p-2 hover:bg-black/50"
+              >
+                Download PDF IN ENG>
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="w-full">
+          <img
+            src="https://images7.alphacoders.com/674/674450.jpg"
+            class="h-full w-full"
+          />
+        </div>
+
+        <div class="w-full flex flex-col justify-between items-center p-2">
+          <h2 class="font-[harry-potter] text-2xl text-yellow-300">5- ORDER OF POIENIX</h2>
+
+          <p class="text-white">
+            DUMBLEDOOR CREATED AN ARMY TO FIGHT AGAINST DEATH EATERS
+          </p>
+
+          <div class="grid grid-cols-2 gap-2">
+            <a href="./BOOKS/URDU/5.pdf" download="5.pdf">
+              <button
+                class="text-white border-l bg-[#05060A] p-2 hover:bg-black/50"
+              >
+                Download PDF URDU
+              </button>
+            </a>
+            <a
+              href="./BOOKS/ENGLISH/J.K. Rowling - HP 5 - Harry Potter and the Order of the Phoenix.pdf"
+              download="J.K. Rowling - HP 5 - Harry Potter and the Order of the Phoenix.pdf"
+            >
+              <button
+                class="text-white border-l bg-[#05060A] p-2 hover:bg-black/50"
+              >
+                Download PDF IN ENG>
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="w-full">
+          <img
+            src="https://c4.wallpaperflare.com/wallpaper/819/847/669/harry-potter-half-blood-prince-5-wallpaper-thumb.jpg"
+            class="h-full w-full"
+          />
+        </div>
+
+        <div class="w-full flex flex-col justify-between items-center p-2">
+          <h2 class="font-[harry-potter] text-2xl text-yellow-300">6- HALF BLOOD PRINCE</h2>
+
+          <p class="text-white">
+            HARRY POTTER FOUND A MYSTERIOUS BOOK WHOSE OWNER NAME WAS HALF BLOOD
+            PRINCE AND THAT BOOK HELP HIM TO BECOME TOPER OF MAGICAL PORTIONS
+            SUBJECT
+          </p>
+
+          <div class="grid grid-cols-2 gap-2">
+            <a href="./BOOKS/URDU/6.pdf" download="6.pdf">
+              <button
+                class="text-white border-l bg-[#05060A] p-2 hover:bg-black/50"
+              >
+                Download PDF URDU
+              </button>
+            </a>
+            <a
+              href="./BOOKS/ENGLISH/J.K. Rowling - HP 6 - Harry Potter and the Half-Blood Prince.pdf"
+              download="J.K. Rowling - HP 6 - Harry Potter and the Half-Blood Prince.pdf"
+            >
+              <button
+                class="text-white border-l bg-[#05060A] p-2 hover:bg-black/50"
+              >
+                Download PDF IN ENG
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="w-full">
+          <img
+            src="https://live.staticflickr.com/6135/5939144172_8a3baee07d_b.jpg"
+            class="h-full w-full"
+          />
+        </div>
+
+        <div class="w-full flex flex-col justify-between items-center p-2">
+          <h2 class="font-[harry-potter] text-2xl text-yellow-300">7- DEADLY HALLOWS</h2>
+
+          <p class="text-white">
+            FINAL BATTLE BETWEEN HARRY AND VOLIDEMORT HAS BEEN STARTED
+          </p>
+
+          <div class="grid grid-cols-2 gap-2">
+            <a href="./BOOKS/URDU/7.pdf" download="7.pdf">
+              <button
+                class="text-white border-l bg-[#05060A] p-2 hover:bg-black/50"
+              >
+                Download PDF URDU
+              </button>
+            </a>
+            <a
+              href="./BOOKS/ENGLISH/J.K. Rowling - HP 7 - Harry Potter and the Deathly Hallows.pdf"
+              download="J.K. Rowling - HP 7 - Harry Potter and the Deathly Hallows.pdf"
+            >
+              <button
+                class="text-white border-l bg-[#05060A] p-2 hover:bg-blackDownload PDF IN ENG"
+              >
+                Download PDF IN ENG
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="pdf" class="bg-[#00171C] p-4 text-white text-center">
+        <p> <span class="text-2xl">©</span>2024 All Rights Reserved</p>
+        <p> Created for Potter heads all aorund Pakistan and India</p>
+        <p> <span class="text-2xl">🧙‍♂️🧙‍♂️</span></p>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
