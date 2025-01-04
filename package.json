@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "postcss -i src/styles.css -o public/styles.css",
+    "build": "tailwindcss  -i src/styles.css -o public/styles.css",
     "start": "nodemon --watch src --exec npm run build"
   },
   "keywords": [],
