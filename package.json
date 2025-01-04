@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-  "build": "postcss src/styles.css -o public/styles.css"
+  "build": "npx postcss src/styles.css -o public/styles.css"
 }
 ,
   "keywords": [],
