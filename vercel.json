@@ -5,6 +5,6 @@
         "use": "@vercel/static"
       }
     ],
-    "outputDirectory": "dist"
+    "outputDirectory": "public"
   }
   
