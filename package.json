@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss build -i style.css -o output.css",
-    "dev": "nodemon --watch ./index.html --exec npm run build"
-  },
+  "build": "postcss src/styles.css -o public/styles.css"
+}
+,
   "keywords": [],
   "author": "",
   "license": "ISC",
