@@ -566,8 +566,12 @@ video {
   left: 2.5rem;
 }
 
-.left-6 {
-  left: 1.5rem;
+.left-4 {
+  left: 1rem;
+}
+
+.left-8 {
+  left: 2rem;
 }
 
 .top-5 {
@@ -773,6 +777,11 @@ video {
 
 .text-\[2\.5rem\] {
   font-size: 2.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-sm {
