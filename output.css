@@ -693,8 +693,8 @@ video {
   background-color: rgb(64 210 243 / 0.15);
 }
 
-.bg-\[linear-gradient\(to_right_bottom\2c rgba\(0\2c 0\2c 0\2c 0\.5\)\2c rgba\(0\2c 0\2c 0\2c 0\.8\)\)\2c url\(\'\.\/images\/hero-banner\.jpg\'\)\] {
-  background-image: linear-gradient(to right bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.8)),url('./images/hero-banner.jpg');
+.bg-\[linear-gradient\(to_right_bottom\2c rgba\(0\2c 0\2c 0\2c 0\.5\)\2c rgba\(0\2c 0\2c 0\2c 0\.8\)\)\2c url\(\'https\:\/\/preview\.redd\.it\/cxeimwflyo881\.png\?width\=800\&format\=png\&auto\=webp\&s\=2160be26be2b962a1b9048c2e6236bbfe643c71c\'\)\] {
+  background-image: linear-gradient(to right bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.8)),url('https://preview.redd.it/cxeimwflyo881.png?width=800&format=png&auto=webp&s=2160be26be2b962a1b9048c2e6236bbfe643c71c');
 }
 
 .bg-cover {
