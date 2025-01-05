@@ -610,6 +610,10 @@ video {
   display: grid;
 }
 
+.h-80 {
+  height: 20rem;
+}
+
 .h-\[80\%\] {
   height: 80%;
 }
@@ -737,6 +741,11 @@ video {
   background-position: center;
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-10 {
   padding: 2.5rem;
 }
@@ -809,6 +818,10 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.cursor-custom {
+  cursor: url('https://res.cloudinary.com/dpvacdjua/image/upload/v1736041870/cursor_gycmys.png') 16 16, auto;
+}
+
 .hover\:bg-black\/50:hover {
   background-color: rgb(0 0 0 / 0.5);
 }
@@ -869,4 +882,3 @@ video {
     color: rgb(255 255 255 / var(--tw-text-opacity, 1));
   }
 }
-

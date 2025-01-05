@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss  -i src/styles.css -o public/styles.css",
-    "start": "nodemon --watch src --exec npm run build"
+   "build": "tailwindcss -i src/styles.css -o public/styles.css",
+"start": "nodemon --watch src --watch ./public/index.html --exec npm run build"
+
   },
   "keywords": [],
   "author": "",

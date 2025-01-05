@@ -3,3 +3,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+    .cursor-custom {
+      cursor: url('https://res.cloudinary.com/dpvacdjua/image/upload/v1736041870/cursor_gycmys.png') 16 16, auto;
+    }
+  }
