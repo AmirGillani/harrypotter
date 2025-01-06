@@ -688,8 +688,8 @@ video {
   height: 100vh;
 }
 
-.w-12 {
-  width: 3rem;
+.w-6 {
+  width: 1.5rem;
 }
 
 .w-60 {
@@ -992,6 +992,10 @@ video {
 
   .md\:top-5 {
     top: 1.25rem;
+  }
+
+  .md\:w-12 {
+    width: 3rem;
   }
 
   .md\:w-60 {
