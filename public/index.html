@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="styles.css" />
 
     <style>
-      *{
+      * {
         scroll-behavior: smooth;
       }
       /* Hide the scrollbar */
@@ -69,7 +69,9 @@
       <nav
         class="md:bg-[#40d2f3]/15 bg-[#40d2f3]/15 z-50 md:top-5 top-5 md:left-96 left-0 absolute md:w-[50vw] w-full rounded-[25px] p-4 shadow"
       >
-        <ul class="text-white flex md:flex-row flex-col  md:justify-between justify-center items-center w-full">
+        <ul
+          class="text-white flex md:flex-row flex-col md:justify-between justify-center items-center w-full"
+        >
           <li
             class="font-[harry-potter] cursor-pointer md:text-xl text-lg hover:text-gray-400"
           >
@@ -109,24 +111,24 @@
           </li>
 
           <li
-          class="cursor-pointer font-[harry-potter] md:text-xl text-sm hover:text-gray-400"
-        >
-          <a
-            href="#about"
-            class="no-underline md:text-white hover:text-gray-400 md:text-xl text-lg"
-            >ABOUT</a
+            class="cursor-pointer font-[harry-potter] md:text-xl text-sm hover:text-gray-400"
           >
-        </li>
+            <a
+              href="#about"
+              class="no-underline md:text-white hover:text-gray-400 md:text-xl text-lg"
+              >ABOUT</a
+            >
+          </li>
 
-        <li
-        class="cursor-pointer font-[harry-potter] md:text-xl text-sm hover:text-gray-400"
-      >
-        <a
-          href="#characters"
-          class="no-underline md:text-white hover:text-gray-400 md:text-xl text-lg"
-          >CHARACTERS</a
-        >
-      </li>
+          <li
+            class="cursor-pointer font-[harry-potter] md:text-xl text-sm hover:text-gray-400"
+          >
+            <a
+              href="#characters"
+              class="no-underline md:text-white hover:text-gray-400 md:text-xl text-lg"
+              >CHARACTERS</a
+            >
+          </li>
         </ul>
       </nav>
 
@@ -749,100 +751,132 @@
         heart of an epic battle between good and evil.
       </p>
 
-      <!-- Container for horizontal scrolling -->
-      <div class="flex overflow-x-auto scrollbar-hide snap-x snap-mandatory">
-        <!-- Image container with fixed width and height -->
-        <div class="mr-6 snap-start flex-shrink-0">
-          <img
-            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/48ed60d3-b3ef-424d-b633-511609410529/dc2uf63-48327dd4-50c3-4738-9d3d-427a6f177313.jpg/v1/fill/w_1600,h_2263,q_75,strp/harry_potter_by_aelini_dc2uf63-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjI2MyIsInBhdGgiOiJcL2ZcLzQ4ZWQ2MGQzLWIzZWYtNDI0ZC1iNjMzLTUxMTYwOTQxMDUyOVwvZGMydWY2My00ODMyN2RkNC01MGMzLTQ3MzgtOWQzZC00MjdhNmYxNzczMTMuanBnIiwid2lkdGgiOiI8PTE2MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.MimCT5vjzlv3oiQz8T8X68nS7P8f06p-kgPRqdy3h2o"
-            alt="Character"
-            class="w-[300px] h-[400px] object-cover rounded-lg"
-          />
-          <h2
-            class="p-2 font-[harry-potter] text-4xl text-center text-[#FDE047]"
-          >
-            Harry Potter
-          </h2>
+      <div 
+      class="grid grid-cols-[1fr_5fr_1fr]">
+        <div class="flex justify-center items-center" id="left-arrow">
+          <img src="../right-arrow.png" alt="" class="rotate-90 w-12 cursor-pointer">
         </div>
-        <!-- You can add more images here with the same width and height -->
-        <div class="mr-6 snap-start flex-shrink-0">
-          <img
-            src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b8418c9586297.560d64a6d594d.jpg"
-            alt="Character"
-            class="w-[300px] h-[400px] object-cover rounded-lg"
-          />
-          <h2
-            class="p-2 font-[harry-potter] text-4xl text-center text-[#FDE047]"
-          >
-            Harmoine Granger
-          </h2>
-        </div>
-        <div class="mr-6 snap-start flex-shrink-0">
-          <img
-            src="https://i.pinimg.com/736x/22/d8/fd/22d8fdbfdb9a96423107abb85b0c4f8e.jpg"
-            alt="Character"
-            class="w-[300px] h-[400px] object-cover rounded-lg"
-          />
-          <h2
-            class="p-2 font-[harry-potter] text-4xl text-center text-[#FDE047]"
-          >
-            Ron Weasly
-          </h2>
-        </div>
+        <!-- Container for horizontal scrolling -->
+        <div class="flex overflow-x-auto scrollbar-hide snap-x snap-mandatory" id="scroll-container">
+          <!-- Image container with fixed width and height -->
+          <div class="mr-6 snap-start flex-shrink-0">
+            <img
+              src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/48ed60d3-b3ef-424d-b633-511609410529/dc2uf63-48327dd4-50c3-4738-9d3d-427a6f177313.jpg/v1/fill/w_1600,h_2263,q_75,strp/harry_potter_by_aelini_dc2uf63-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjI2MyIsInBhdGgiOiJcL2ZcLzQ4ZWQ2MGQzLWIzZWYtNDI0ZC1iNjMzLTUxMTYwOTQxMDUyOVwvZGMydWY2My00ODMyN2RkNC01MGMzLTQ3MzgtOWQzZC00MjdhNmYxNzczMTMuanBnIiwid2lkdGgiOiI8PTE2MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.MimCT5vjzlv3oiQz8T8X68nS7P8f06p-kgPRqdy3h2o"
+              alt="Character"
+              class="w-[300px] h-[400px] object-cover rounded-lg"
+            />
+            <h2
+              class="p-2 font-[harry-potter] text-4xl text-center text-[#FDE047]"
+            >
+              Harry Potter
+            </h2>
+          </div>
+          <!-- You can add more images here with the same width and height -->
+          <div class="mr-6 snap-start flex-shrink-0">
+            <img
+              src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b8418c9586297.560d64a6d594d.jpg"
+              alt="Character"
+              class="w-[300px] h-[400px] object-cover rounded-lg"
+            />
+            <h2
+              class="p-2 font-[harry-potter] text-4xl text-center text-[#FDE047]"
+            >
+              Harmoine Granger
+            </h2>
+          </div>
+          <div class="mr-6 snap-start flex-shrink-0">
+            <img
+              src="https://i.pinimg.com/736x/22/d8/fd/22d8fdbfdb9a96423107abb85b0c4f8e.jpg"
+              alt="Character"
+              class="w-[300px] h-[400px] object-cover rounded-lg"
+            />
+            <h2
+              class="p-2 font-[harry-potter] text-4xl text-center text-[#FDE047]"
+            >
+              Ron Weasly
+            </h2>
+          </div>
 
-        <div class="mr-6 snap-start flex-shrink-0">
-          <img
-            src="https://preview.redd.it/uyvawnbah8r61.jpg?width=640&crop=smart&auto=webp&s=8a04cb0c521da108cf37cea3afa363b2a1b62276"
-            alt="Character"
-            class="w-[300px] h-[400px] object-cover rounded-lg"
-          />
-          <h2
-            class="p-2 font-[harry-potter] text-4xl text-center text-[#FDE047]"
-          >
-            Snape
-          </h2>
-        </div>
+          <div class="mr-6 snap-start flex-shrink-0">
+            <img
+              src="https://preview.redd.it/uyvawnbah8r61.jpg?width=640&crop=smart&auto=webp&s=8a04cb0c521da108cf37cea3afa363b2a1b62276"
+              alt="Character"
+              class="w-[300px] h-[400px] object-cover rounded-lg"
+            />
+            <h2
+              class="p-2 font-[harry-potter] text-4xl text-center text-[#FDE047]"
+            >
+              Snape
+            </h2>
+          </div>
 
-        <div class="mr-6 snap-start flex-shrink-0">
-          <img
-            src="https://creator.nightcafe.studio/jobs/YJam9E3pLnrLMgKY6d1q/YJam9E3pLnrLMgKY6d1q--1--i0kwa.jpg"
-            alt="Character"
-            class="w-[300px] h-[400px] object-cover rounded-lg"
-          />
-          <h2
-            class="p-2 font-[harry-potter] text-4xl text-center text-[#FDE047]"
-          >
-            McGonagal
-          </h2>
-        </div>
+          <div class="mr-6 snap-start flex-shrink-0">
+            <img
+              src="https://creator.nightcafe.studio/jobs/YJam9E3pLnrLMgKY6d1q/YJam9E3pLnrLMgKY6d1q--1--i0kwa.jpg"
+              alt="Character"
+              class="w-[300px] h-[400px] object-cover rounded-lg"
+            />
+            <h2
+              class="p-2 font-[harry-potter] text-4xl text-center text-[#FDE047]"
+            >
+              McGonagal
+            </h2>
+          </div>
 
-        <div class="mr-6 snap-start flex-shrink-0">
-          <img
-            src="https://i.pinimg.com/originals/ac/46/e4/ac46e426cfadcc78c52cb287e9e79638.png"
-            alt="Character"
-            class="w-[300px] h-[400px] object-cover rounded-lg"
-          />
-          <h2
-            class="p-2 font-[harry-potter] text-4xl text-center text-[#FDE047]"
-          >
-            Dumbledor
-          </h2>
-        </div>
+          <div class="mr-6 snap-start flex-shrink-0">
+            <img
+              src="https://i.pinimg.com/originals/ac/46/e4/ac46e426cfadcc78c52cb287e9e79638.png"
+              alt="Character"
+              class="w-[300px] h-[400px] object-cover rounded-lg"
+            />
+            <h2
+              class="p-2 font-[harry-potter] text-4xl text-center text-[#FDE047]"
+            >
+              Dumbledor
+            </h2>
+          </div>
 
-        <div class="mr-6 snap-start flex-shrink-0">
-          <img
-            src=" https://m.media-amazon.com/images/I/71dEHBW+y6L._AC_UF894,1000_QL80_.jpg"
-            alt="Character"
-            class="w-[300px] h-[400px] object-cover rounded-lg"
-          />
-          <h2
-            class="p-2 font-[harry-potter] text-4xl text-center text-[#FDE047]"
-          >
-            Draco Malfoy
-          </h2>
+          <div class="mr-6 snap-start flex-shrink-0">
+            <img
+              src=" https://m.media-amazon.com/images/I/71dEHBW+y6L._AC_UF894,1000_QL80_.jpg"
+              alt="Character"
+              class="w-[300px] h-[400px] object-cover rounded-lg"
+            />
+            <h2
+              class="p-2 font-[harry-potter] text-4xl text-center text-[#FDE047]"
+            >
+              Draco Malfoy
+            </h2>
+          </div>
+        </div>
+        <div class="flex justify-center items-center" id="right-arrow">
+          <img src="../right-arrow.png" alt="" class="-rotate-90 w-12 cursor-pointer">
         </div>
       </div>
     </div>
+
+    <!-- Add this script to enable scroll on arrow click -->
+<script>
+  const leftArrow = document.getElementById('left-arrow');
+  const rightArrow = document.getElementById('right-arrow');
+  const scrollContainer = document.getElementById('scroll-container');
+
+  // Scroll right when the right arrow is clicked
+  rightArrow.addEventListener('click', () => {
+    scrollContainer.scrollBy({
+      left: -300,  // You can adjust this value to control how much it scrolls per click
+      behavior: 'smooth'
+    });
+  });
+
+  // Scroll left when the left arrow is clicked
+  leftArrow.addEventListener('click', () => {
+    scrollContainer.scrollBy({
+      left: 300,  // You can adjust this value to control how much it scrolls per click
+      behavior: 'smooth'
+    });
+  });
+</script>
 
     <div class="bg-[#00171C] p-4 text-white text-center" id="footer">
       <img
