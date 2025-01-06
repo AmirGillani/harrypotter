@@ -17,6 +17,17 @@
     <link rel="stylesheet" href="styles.css" />
 
     <style>
+      *{
+        scroll-behavior: smooth;
+      }
+      /* Hide the scrollbar */
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+      .scrollbar-hide {
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
+        scrollbar-width: none; /* Firefox */
+      }
       @font-face {
         font-family: "harry-potter"; /* Name you will use to reference the font */
 
@@ -56,9 +67,9 @@
       class="h-screen w-full relative bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.8)),url('https://preview.redd.it/cxeimwflyo881.png?width=800&format=png&auto=webp&s=2160be26be2b962a1b9048c2e6236bbfe643c71c')] bg-cover bg-center"
     >
       <nav
-        class="md:bg-[#40d2f3]/15 bg-[#40d2f3]/15 z-50 md:top-5 top-5 md:left-96 left-8 absolute md:w-1/3 w-80 rounded-[25px] p-4 shadow"
+        class="md:bg-[#40d2f3]/15 bg-[#40d2f3]/15 z-50 md:top-5 top-5 md:left-96 left-0 absolute md:w-[50vw] w-full rounded-[25px] p-4 shadow"
       >
-        <ul class="text-white flex flex-row justify-between w-full">
+        <ul class="text-white flex md:flex-row flex-col  md:justify-between justify-center items-center w-full">
           <li
             class="font-[harry-potter] cursor-pointer md:text-xl text-lg hover:text-gray-400"
           >
@@ -96,6 +107,26 @@
               >GALLERY</a
             >
           </li>
+
+          <li
+          class="cursor-pointer font-[harry-potter] md:text-xl text-sm hover:text-gray-400"
+        >
+          <a
+            href="#about"
+            class="no-underline md:text-white hover:text-gray-400 md:text-xl text-lg"
+            >ABOUT</a
+          >
+        </li>
+
+        <li
+        class="cursor-pointer font-[harry-potter] md:text-xl text-sm hover:text-gray-400"
+      >
+        <a
+          href="#characters"
+          class="no-underline md:text-white hover:text-gray-400 md:text-xl text-lg"
+          >CHARACTERS</a
+        >
+      </li>
         </ul>
       </nav>
 
@@ -648,9 +679,9 @@
               follows a young boy named Harry who discovers that he is a wizard.
               He was raised by his cruel aunt and uncle, the Dursleys, who kept
               him in the dark about his true heritage. On his 11th birthday,
-              <span class="text-[#FDE047] font-bold">Harry</span> learns that
-              he is a wizard and is invited to attend Hogwarts School of
-              Witchcraft and Wizardry. <br /><br />
+              <span class="text-[#FDE047] font-bold">Harry</span> learns that he
+              is a wizard and is invited to attend Hogwarts School of Witchcraft
+              and Wizardry. <br /><br />
 
               At Hogwarts,<span class="text-[#FDE047] font-bold">Harry</span>
               makes new friends, like Ron Weasley and Hermione Granger, and
@@ -658,8 +689,7 @@
               parents, who were wizards, were killed by a dark wizard named Lord
               Voldemort when
               <span class="text-[#FDE047] font-bold">Harry</span> was just a
-              baby.
-              <span class="text-[#FDE047] font-bold">Harry</span> survived
+              baby. <span class="text-[#FDE047] font-bold">Harry</span> survived
               Voldemort's attack and has a lightning-shaped scar on his forehead
               as a reminder. As
               <span class="text-[#FDE047] font-bold">Harry</span> grows older,
@@ -697,7 +727,7 @@
       </div>
     </div>
 
-    <div class="bg-[#012B30] p-4" id="about">
+    <div class="bg-[#012B30] p-4" id="characters">
       <h2
         class="font-[harry-potter] text-[2.5rem] text-center pt-5 pb-5 vibrate text-white"
       >
@@ -728,7 +758,11 @@
             alt="Character"
             class="w-[300px] h-[400px] object-cover rounded-lg"
           />
-          <h2 class="p-2 font-[harry-potter] text-4xl text-center text-[#FDE047] ">Harry Potter</h2>
+          <h2
+            class="p-2 font-[harry-potter] text-4xl text-center text-[#FDE047]"
+          >
+            Harry Potter
+          </h2>
         </div>
         <!-- You can add more images here with the same width and height -->
         <div class="mr-6 snap-start flex-shrink-0">
@@ -737,7 +771,11 @@
             alt="Character"
             class="w-[300px] h-[400px] object-cover rounded-lg"
           />
-          <h2 class="p-2 font-[harry-potter] text-4xl text-center text-[#FDE047] ">Harmoine Granger</h2>
+          <h2
+            class="p-2 font-[harry-potter] text-4xl text-center text-[#FDE047]"
+          >
+            Harmoine Granger
+          </h2>
         </div>
         <div class="mr-6 snap-start flex-shrink-0">
           <img
@@ -745,7 +783,11 @@
             alt="Character"
             class="w-[300px] h-[400px] object-cover rounded-lg"
           />
-          <h2 class="p-2 font-[harry-potter] text-4xl text-center text-[#FDE047] ">Ron Weasly</h2>
+          <h2
+            class="p-2 font-[harry-potter] text-4xl text-center text-[#FDE047]"
+          >
+            Ron Weasly
+          </h2>
         </div>
 
         <div class="mr-6 snap-start flex-shrink-0">
@@ -754,7 +796,11 @@
             alt="Character"
             class="w-[300px] h-[400px] object-cover rounded-lg"
           />
-          <h2 class="p-2 font-[harry-potter] text-4xl text-center text-[#FDE047] ">Snape</h2>
+          <h2
+            class="p-2 font-[harry-potter] text-4xl text-center text-[#FDE047]"
+          >
+            Snape
+          </h2>
         </div>
 
         <div class="mr-6 snap-start flex-shrink-0">
@@ -763,7 +809,11 @@
             alt="Character"
             class="w-[300px] h-[400px] object-cover rounded-lg"
           />
-          <h2 class="p-2 font-[harry-potter] text-4xl text-center text-[#FDE047] ">McGonagal</h2>
+          <h2
+            class="p-2 font-[harry-potter] text-4xl text-center text-[#FDE047]"
+          >
+            McGonagal
+          </h2>
         </div>
 
         <div class="mr-6 snap-start flex-shrink-0">
@@ -772,7 +822,11 @@
             alt="Character"
             class="w-[300px] h-[400px] object-cover rounded-lg"
           />
-          <h2 class="p-2 font-[harry-potter] text-4xl text-center text-[#FDE047] ">Dumbledor</h2>
+          <h2
+            class="p-2 font-[harry-potter] text-4xl text-center text-[#FDE047]"
+          >
+            Dumbledor
+          </h2>
         </div>
 
         <div class="mr-6 snap-start flex-shrink-0">
@@ -781,23 +835,16 @@
             alt="Character"
             class="w-[300px] h-[400px] object-cover rounded-lg"
           />
-          <h2 class="p-2 font-[harry-potter] text-4xl text-center text-[#FDE047] ">Draco Malfoy</h2>
+          <h2
+            class="p-2 font-[harry-potter] text-4xl text-center text-[#FDE047]"
+          >
+            Draco Malfoy
+          </h2>
         </div>
       </div>
-
-      <style>
-        /* Hide the scrollbar */
-        .scrollbar-hide::-webkit-scrollbar {
-          display: none;
-        }
-        .scrollbar-hide {
-          -ms-overflow-style: none; /* Internet Explorer 10+ */
-          scrollbar-width: none; /* Firefox */
-        }
-      </style>
     </div>
 
-    <div class="bg-[#00171C] p-4 text-white text-center">
+    <div class="bg-[#00171C] p-4 text-white text-center" id="footer">
       <img
         src="https://i.pinimg.com/originals/8b/b3/99/8bb3991dca3078f26bab8d07770f8d33.png"
         alt=""
