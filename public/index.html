@@ -34,6 +34,30 @@
         src: url("https://res.cloudinary.com/dpvacdjua/raw/upload/v1736007876/HARRYP___jcyjop.TTF");
       }
 
+      @font-face {
+        font-family: "griffindor"; /* Name you will use to reference the font */
+
+        src: url("https://res.cloudinary.com/dpvacdjua/raw/upload/v1736257111/griffindor_cm3gvi.otf");
+      }
+
+      @font-face {
+        font-family: "slythrin"; /* Name you will use to reference the font */
+
+        src: url("https://res.cloudinary.com/dpvacdjua/raw/upload/v1736257111/stythrin_nf60ay.ttf");
+      }
+
+      @font-face {
+        font-family: "ravenclaw"; /* Name you will use to reference the font */
+
+        src: url("https://res.cloudinary.com/dpvacdjua/raw/upload/v1736257110/ravenclaw_cs6tbc.otf");
+      }
+
+      @font-face {
+        font-family: "hufflepuff"; /* Name you will use to reference the font */
+
+        src: url("https://res.cloudinary.com/dpvacdjua/raw/upload/v1736257111/hufflepuff_ao7pgq.ttf");
+      }
+
       /* Define the vibrating animation */
       @keyframes vibration {
         0% {
@@ -751,13 +775,19 @@
         heart of an epic battle between good and evil.
       </p>
 
-      <div 
-      class="grid grid-cols-[1fr_5fr_1fr]">
+      <div class="grid grid-cols-[1fr_5fr_1fr]">
         <div class="flex justify-center items-center" id="left-arrow">
-          <img src="https://res.cloudinary.com/dpvacdjua/image/upload/v1736186378/right-arrow_sjz47c.png" alt="" class="rotate-90 md:w-12 w-6 cursor-pointer">
+          <img
+            src="https://res.cloudinary.com/dpvacdjua/image/upload/v1736186378/right-arrow_sjz47c.png"
+            alt=""
+            class="rotate-90 md:w-12 w-6 cursor-pointer"
+          />
         </div>
         <!-- Container for horizontal scrolling -->
-        <div class="flex overflow-x-auto scrollbar-hide snap-x snap-mandatory" id="scroll-container">
+        <div
+          class="flex overflow-x-auto scrollbar-hide snap-x snap-mandatory"
+          id="scroll-container"
+        >
           <!-- Image container with fixed width and height -->
           <div class="mr-6 snap-start flex-shrink-0">
             <img
@@ -850,33 +880,245 @@
           </div>
         </div>
         <div class="flex justify-center items-center" id="right-arrow">
-          <img src="https://res.cloudinary.com/dpvacdjua/image/upload/v1736186378/right-arrow_sjz47c.png" alt="" class="-rotate-90 md:w-12 w-6 cursor-pointer">
+          <img
+            src="https://res.cloudinary.com/dpvacdjua/image/upload/v1736186378/right-arrow_sjz47c.png"
+            alt=""
+            class="-rotate-90 md:w-12 w-6 cursor-pointer"
+          />
         </div>
       </div>
     </div>
 
     <!-- Add this script to enable scroll on arrow click -->
-<script>
-  const leftArrow = document.getElementById('left-arrow');
-  const rightArrow = document.getElementById('right-arrow');
-  const scrollContainer = document.getElementById('scroll-container');
+    <script>
+      const leftArrow = document.getElementById("left-arrow");
+      const rightArrow = document.getElementById("right-arrow");
+      const scrollContainer = document.getElementById("scroll-container");
 
-  // Scroll right when the right arrow is clicked
-  rightArrow.addEventListener('click', () => {
-    scrollContainer.scrollBy({
-      left: 300,  // You can adjust this value to control how much it scrolls per click
-      behavior: 'smooth'
-    });
-  });
+      // Scroll right when the right arrow is clicked
+      rightArrow.addEventListener("click", () => {
+        scrollContainer.scrollBy({
+          left: 300, // You can adjust this value to control how much it scrolls per click
+          behavior: "smooth",
+        });
+      });
 
-  // Scroll left when the left arrow is clicked
-  leftArrow.addEventListener('click', () => {
-    scrollContainer.scrollBy({
-      left: -300,  // You can adjust this value to control how much it scrolls per click
-      behavior: 'smooth'
-    });
-  });
-</script>
+      // Scroll left when the left arrow is clicked
+      leftArrow.addEventListener("click", () => {
+        scrollContainer.scrollBy({
+          left: -300, // You can adjust this value to control how much it scrolls per click
+          behavior: "smooth",
+        });
+      });
+    </script>
+
+    <div class="bg-[#012B30] p-4" id="characters">
+      <h2
+        class="font-[harry-potter] text-[2.5rem] text-center pt-5 pb-5 vibrate text-white"
+      >
+        GET YOUR HOGWARTS CARD
+      </h2>
+      <div id="cards" class="flex flex-col justify-center items-center">
+        <div
+          id="gryffindor"
+          class="bg-[#CA9A2C] md:w-[50vw] md:h-[60vh] w-96 h-72 rounded-2xl flex flex-col relative mb-10"
+        >
+          <div class="grid grid-cols-[1fr_1fr_1fr] w-full h-full">
+            <div class="h-full w-full">
+              <img
+                src="https://i.pinimg.com/564x/8b/84/90/8b84902086769fdb555c50dc88ce83d3.jpg"
+                alt=""
+                class="h-full rounded-b-2xl rounded-tl-2xl"
+              />
+            </div>
+            <div class="p-2 md:pt-10 pt-2">
+              <p class="font-bold">NAME</p>
+              <p class="text-[#C10D26] font-[griffindor] text-sm">
+                HERMOINE GRANGER
+              </p>
+
+              <p class="font-bold">DOB</p>
+              <p class="text-[#C10D26] font-bold text-sm">09/19/1979</p>
+
+              <p class="font-bold">GENDER</p>
+              <p class="text-[#C10D26] font-[griffindor] text-sm">FEMALE</p>
+
+              <p class="font-bold">HOUSE</p>
+              <p class="text-[#C10D26] font-[griffindor] text-sm">GRIFFINDOR</p>
+            </div>
+            <div class="flex flex-row w-[100%] relative">
+              <div class="w-[10%] bg-[#C10D26] h-[80%]"></div>
+              <div class="w-[20%] h-[80%]"></div>
+              <div class="w-[40%] bg-[#C10D26] h-[80%]"></div>
+              <div class="w-[30%] h-[80%]"></div>
+              <img
+                src="https://res.cloudinary.com/dpvacdjua/image/upload/v1736259572/2796360_gryffindor-harry-potter-gryffindor-necklace-transparent-png-removebg-preview_a7e4wy.png"
+                alt=""
+                class="absolute top-6"
+              />
+            </div>
+          </div>
+          <div
+            class="h-[20%] w-full bg-[#710C17] text-[#CA9A2C] font-[griffindor] absolute bottom-0 p-2 text-3xl text-center tracking-widest rounded-b-2xl"
+          >
+            Hogwarts Student ID
+          </div>
+        </div>
+
+        <div
+          id="slythrin"
+          class="bg-[#CA9A2C] md:w-[50vw] md:h-[60vh] w-96 h-72 rounded-2xl flex flex-col relative mb-10"
+        >
+          <div class="grid grid-cols-[1fr_1fr_1fr] w-full h-full">
+            <div class="h-full w-full">
+              <img
+                src="https://media.harrypotterfanzone.com/draco-malfoy-order-of-the-phoenix-portrait-3.jpg"
+                alt=""
+                class="h-full rounded-b-2xl rounded-tl-2xl"
+              />
+            </div>
+            <div class="p-2 md:pt-10 pt-2">
+              <p class="font-bold">NAME</p>
+              <p class="text-[#17421F] font-[slythrin] text-lg font-bold">
+                DRACO MALFOY
+              </p>
+
+              <p class="font-bold">DOB</p>
+              <p class="text-[#17421F] text-lg font-bold">09/19/1979</p>
+
+              <p class="font-bold">GENDER</p>
+              <p class="text-[#17421F] font-[slythrin] text-lg font-bold">
+                MALE
+              </p>
+
+              <p class="font-bold">HOUSE</p>
+              <p class="text-[#17421F] font-[slythrin] text-lg font-bold">
+                SLYTHRIN
+              </p>
+            </div>
+            <div class="flex flex-row w-[100%] relative">
+              <div class="w-[10%] bg-[#17421F] h-[80%]"></div>
+              <div class="w-[20%] h-[80%]"></div>
+              <div class="w-[40%] bg-[#17421F] h-[80%]"></div>
+              <div class="w-[30%] h-[80%]"></div>
+              <img
+                src="https://res.cloudinary.com/dpvacdjua/image/upload/v1736259571/Harry_Potter_And_The_Philosopher_s_Stone_Sorting_Hat_Slytherin_House_Hogwarts_PNG_-_Free_Download-removebg-preview_wqg6kd.png"
+                class="absolute top-6"
+              />
+            </div>
+          </div>
+          <div
+            class="h-[20%] w-full bg-[#17421F] text-[#CA9A2C] font-[griffindor] absolute bottom-0 p-2 text-3xl text-center tracking-widest rounded-b-2xl"
+          >
+            Hogwarts Student ID
+          </div>
+        </div>
+
+        <div
+          id="hufflepuff"
+          class="bg-[#CA9A2C] md:w-[50vw] md:h-[60vh] w-96 h-72 rounded-2xl flex flex-col relative mb-10"
+        >
+          <div class="grid grid-cols-[1fr_1fr_1fr] w-full h-full">
+            <div class="h-full w-full">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1IwhN0mgZDX11RrhuSEQc3_BHMnn4rA72Kg&s"
+                alt=""
+                class="h-full rounded-b-2xl rounded-tl-2xl"
+              />
+            </div>
+            <div class="p-2 md:pt-10 pt-2">
+              <p class="font-bold">NAME</p>
+              <p class="text-[#82471A] font-[hufflepuff] text-lg font-bold">
+                CEDRIC DEGORI
+              </p>
+
+              <p class="font-bold">DOB</p>
+              <p class="text-[#82471A] text-lg font-bold">09/19/1979</p>
+
+              <p class="font-bold">GENDER</p>
+              <p class="text-[#82471A] font-[hufflepuff] text-lg font-bold">
+                MALE
+              </p>
+
+              <p class="font-bold">HOUSE</p>
+              <p class="text-[#82471A] font-[hufflepuff] text-lg font-bold">
+                HUFFLEPUFF
+              </p>
+            </div>
+            <div class="flex flex-row w-[100%] relative">
+              <div class="w-[10%] bg-[#16120F] h-[80%]"></div>
+              <div class="w-[20%] h-[80%]"></div>
+              <div class="w-[40%] bg-[#16120F] h-[80%]"></div>
+              <div class="w-[30%] h-[80%]"></div>
+              <img
+                src="https://res.cloudinary.com/dpvacdjua/image/upload/v1736262834/pngegg-removebg-preview_s7sacv.png"
+                alt=""
+                class="absolute top-6"
+              />
+            </div>
+          </div>
+          <div
+            class="h-[20%] w-full bg-[#16120F] text-[#CA9A2C] font-[griffindor] absolute bottom-0 p-2 text-3xl text-center tracking-widest rounded-b-2xl"
+          >
+            Hogwarts Student ID
+          </div>
+        </div>
+
+        <div
+          id="ravenclaw"
+          class="bg-[#005B7E] md:w-[50vw] md:h-[60vh] w-96 h-72 rounded-2xl flex flex-col relative mb-10"
+        >
+          <div class="grid grid-cols-[1fr_1fr_1fr] w-full h-full">
+            <div class="h-full w-full">
+              <img
+                src="https://i.namu.wiki/i/MROJTzx_vKYuAX2c2Y0Tn9IdYIir_vQDGEsgOqqjgiG4qFHASXCDT1Tt5e1kVUGnRk8SIxJLjLqEHl7meTHk3Q.webp"
+                alt=""
+                class="h-full rounded-b-2xl rounded-tl-2xl"
+              />
+            </div>
+            <div class="p-2 md:pt-10 pt-2">
+              <p class="font-bold">NAME</p>
+              <p class="text-white font-[ravenclaw] text-lg tracking-wider">
+                LUNA LOVEGOOD
+              </p>
+
+              <p class="font-bold">DOB</p>
+              <p
+                class="text-white font-bold font-[ravenclaw] text-lg tracking-wider"
+              >
+                09/19/1979
+              </p>
+
+              <p class="font-bold">GENDER</p>
+              <p class="text-white font-[ravenclaw] text-lg tracking-wider">
+                FEMALE
+              </p>
+
+              <p class="font-bold">HOUSE</p>
+              <p class="text-white font-[ravenclaw] text-lg tracking-wider">
+                RAVENCLAW
+              </p>
+            </div>
+            <div class="flex flex-row w-[100%] relative">
+              <div class="w-[10%] bg-[#D2D1CA] h-[80%]"></div>
+              <div class="w-[20%] h-[80%]"></div>
+              <div class="w-[40%] bg-[#D2D1CA] h-[80%]"></div>
+              <div class="w-[30%] h-[80%]"></div>
+              <img
+                src="https://res.cloudinary.com/dpvacdjua/image/upload/v1736259572/pngegg__1_-removebg-preview_fuzv1b.png"
+                alt=""
+                class="absolute top-6"
+              />
+            </div>
+          </div>
+          <div
+            class="h-[20%] w-full bg-[#0C2027] text-[#349CCD] font-[griffindor] absolute bottom-0 p-2 text-3xl text-center tracking-widest rounded-b-2xl"
+          >
+            Hogwarts Student ID
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="bg-[#00171C] p-4 text-white text-center" id="footer">
       <img
