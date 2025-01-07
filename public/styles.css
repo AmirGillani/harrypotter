@@ -656,6 +656,10 @@ video {
   margin-top: 5rem;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .block {
   display: block;
 }
@@ -890,6 +894,10 @@ video {
   border-radius: 0.5rem;
 }
 
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
 .rounded-b-2xl {
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
@@ -960,6 +968,11 @@ video {
 .bg-\[\#D2D1CA\] {
   --tw-bg-opacity: 1;
   background-color: rgb(210 209 202 / var(--tw-bg-opacity, 1));
+}
+
+.bg-red-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity, 1));
 }
 
 .bg-\[linear-gradient\(to_right_bottom\2c rgba\(0\2c 0\2c 0\2c 0\.5\)\2c rgba\(0\2c 0\2c 0\2c 0\.8\)\)\2c url\(\'https\:\/\/preview\.redd\.it\/cxeimwflyo881\.png\?width\=800\&format\=png\&auto\=webp\&s\=2160be26be2b962a1b9048c2e6236bbfe643c71c\'\)\] {
@@ -1168,6 +1181,11 @@ video {
 
 .hover\:bg-black\/50:hover {
   background-color: rgb(0 0 0 / 0.5);
+}
+
+.hover\:bg-red-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:text-gray-400:hover {

@@ -98,5 +98,8 @@ document.addEventListener("DOMContentLoaded", function () {
         behavior: 'smooth', // Smooth scrolling animation
         block: 'start' // Scroll to the top of the element
     });
+
+    document.getElementById("download-pdf").style.display="block"
+
   });
 });

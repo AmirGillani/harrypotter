@@ -84,6 +84,8 @@
         animation: vibration 5s linear infinite; /* Vibration animation */
       }
     </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
     <title>HARRY POTTER || BOOKS IN HINDI || MOVIES IN HINDI</title>
   </head>
   <body class="scroll-smooth cursor-custom">
@@ -154,18 +156,15 @@
             >
           </li>
 
-          
-
           <li
-          class="cursor-pointer font-[harry-potter] md:text-xl text-sm hover:text-gray-400"
-        >
-          <a
-            href="#get-your-card"
-            class="no-underline md:text-white hover:text-gray-400 md:text-xl text-lg"
-            >MY CARD</a
+            class="cursor-pointer font-[harry-potter] md:text-xl text-sm hover:text-gray-400"
           >
-        </li>
-
+            <a
+              href="#get-your-card"
+              class="no-underline md:text-white hover:text-gray-400 md:text-xl text-lg"
+              >MY CARD</a
+            >
+          </li>
         </ul>
       </nav>
 
@@ -990,7 +989,17 @@
           </form>
         </div>
       </div>
-      <div id="cards" class="flex flex-col justify-center items-center">
+      <div
+        id="cards"
+        class="flex flex-col justify-center items-center p-2 mt-8"
+      >
+        <button
+          id="download-pdf"
+          class="bg-red-600 text-white p-2 rounded-md hover:bg-red-500 hidden"
+        >
+          Download PDF
+        </button>
+
         <div
           id="GRYFFINDOR"
           class="bg-[#CA9A2C] md:w-[50vw] md:h-[60vh] w-96 h-72 rounded-2xl flex-col relative mt-10 mb-10 hidden"
@@ -1000,7 +1009,7 @@
               <img
                 src="https://i.pinimg.com/564x/8b/84/90/8b84902086769fdb555c50dc88ce83d3.jpg"
                 alt=""
-                class="h-full rounded-b-2xl rounded-tl-2xl"
+                class="h-full rounded-b-2xl rounded-tl-2xl object-cover"
                 id="GRYFFINDOR-IMG"
               />
             </div>
@@ -1057,7 +1066,7 @@
               <img
                 src="https://media.harrypotterfanzone.com/draco-malfoy-order-of-the-phoenix-portrait-3.jpg"
                 alt=""
-                class="h-full rounded-b-2xl rounded-tl-2xl"
+                class="h-full rounded-b-2xl rounded-tl-2xl object-cover"
                 id="SLYTHERIN-IMG"
               />
             </div>
@@ -1115,7 +1124,7 @@
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1IwhN0mgZDX11RrhuSEQc3_BHMnn4rA72Kg&s"
                 alt=""
-                class="h-full rounded-b-2xl rounded-tl-2xl"
+                class="h-full rounded-b-2xl rounded-tl-2xl object-cover"
                 id="HUFFLEPUFF-IMG"
               />
             </div>
@@ -1174,7 +1183,7 @@
               <img
                 src="https://i.namu.wiki/i/MROJTzx_vKYuAX2c2Y0Tn9IdYIir_vQDGEsgOqqjgiG4qFHASXCDT1Tt5e1kVUGnRk8SIxJLjLqEHl7meTHk3Q.webp"
                 alt=""
-                class="h-full rounded-b-2xl rounded-tl-2xl"
+                class="h-full rounded-b-2xl rounded-tl-2xl object-cover"
                 id="RAVENCLAW-IMG"
               />
             </div>
@@ -1261,7 +1270,31 @@
           behavior: "smooth",
         });
       });
+
+      document
+        .getElementById("download-pdf")
+        .addEventListener("click", function () {
+          const { jsPDF } = window.jspdf; // Get jsPDF from the window object
+
+          const doc = new jsPDF(); // Create a new jsPDF instance
+
+          // Select the content you want to capture
+          const element = document.getElementById("cards");
+
+          // Convert the div content to a PDF
+          doc.html(element, {
+            callback: function (doc) {
+              // Save the generated PDF
+              doc.save("content.pdf");
+            },
+            x: 10, // Horizontal offset (optional)
+            y: 10, // Vertical offset (optional)
+            width: 180, // Width of the content on the page (optional)
+            windowWidth: 800, // Adjust window width for rendering (optional)
+          });
+        });
     </script>
+
     <script src="index.js"></script>
   </body>
 </html>
