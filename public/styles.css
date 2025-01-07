@@ -608,10 +608,6 @@ video {
   left: 0px;
 }
 
-.left-10 {
-  left: 2.5rem;
-}
-
 .left-4 {
   left: 1rem;
 }
@@ -626,10 +622,6 @@ video {
 
 .top-\[45vh\] {
   top: 45vh;
-}
-
-.top-\[55vh\] {
-  top: 55vh;
 }
 
 .z-10 {
@@ -656,6 +648,14 @@ video {
   margin-right: 1.5rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .block {
   display: block;
 }
@@ -666,6 +666,10 @@ video {
 
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-72 {
@@ -682,6 +686,10 @@ video {
 
 .h-\[20\%\] {
   height: 20%;
+}
+
+.h-\[32rem\] {
+  height: 32rem;
 }
 
 .h-\[400px\] {
@@ -706,6 +714,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.w-48 {
+  width: 12rem;
 }
 
 .w-6 {
@@ -754,6 +766,10 @@ video {
 
 .w-\[60\%\] {
   width: 60%;
+}
+
+.w-\[70\%\] {
+  width: 70%;
 }
 
 .w-\[80\%\] {
@@ -836,6 +852,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
 }
 
 .gap-2 {
@@ -975,6 +995,10 @@ video {
   padding: 1rem;
 }
 
+.p-5 {
+  padding: 1.25rem;
+}
+
 .pb-5 {
   padding-bottom: 1.25rem;
 }
@@ -1034,11 +1058,6 @@ video {
   line-height: 2.5rem;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
 .text-\[2\.5rem\] {
   font-size: 2.5rem;
 }
@@ -1051,6 +1070,16 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-bold {
@@ -1113,6 +1142,11 @@ video {
   color: rgb(253 224 71 / var(--tw-text-opacity, 1));
 }
 
+.text-yellow-400 {
+  --tw-text-opacity: 1;
+  color: rgb(250 204 21 / var(--tw-text-opacity, 1));
+}
+
 .no-underline {
   text-decoration-line: none;
 }
@@ -1127,6 +1161,11 @@ video {
   cursor: url('https://res.cloudinary.com/dpvacdjua/image/upload/v1736041870/cursor_gycmys.png') 16 16, auto;
 }
 
+.hover\:bg-\[\#30a5b3\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(48 165 179 / var(--tw-bg-opacity, 1));
+}
+
 .hover\:bg-black\/50:hover {
   background-color: rgb(0 0 0 / 0.5);
 }
@@ -1137,10 +1176,6 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:left-1\/4 {
-    left: 25%;
-  }
-
   .md\:left-96 {
     left: 24rem;
   }
@@ -1151,6 +1186,10 @@ video {
 
   .md\:top-5 {
     top: 1.25rem;
+  }
+
+  .md\:h-\[100vh\] {
+    height: 100vh;
   }
 
   .md\:h-\[60vh\] {
@@ -1195,10 +1234,6 @@ video {
 
   .md\:pt-10 {
     padding-top: 2.5rem;
-  }
-
-  .md\:text-\[6rem\] {
-    font-size: 6rem;
   }
 
   .md\:text-xl {

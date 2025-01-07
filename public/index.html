@@ -153,6 +153,19 @@
               >CHARACTERS</a
             >
           </li>
+
+          
+
+          <li
+          class="cursor-pointer font-[harry-potter] md:text-xl text-sm hover:text-gray-400"
+        >
+          <a
+            href="#get-your-card"
+            class="no-underline md:text-white hover:text-gray-400 md:text-xl text-lg"
+            >MY CARD</a
+          >
+        </li>
+
         </ul>
       </nav>
 
@@ -163,12 +176,6 @@
         alt=""
         class="absolute z-10 top-[45vh] md:left-[25rem] left-4 vibrate w-[30rem]"
       />
-      <!-- <h1
-        class="font-[harry-potter] md:text-[6rem] text-6xl text-white absolute z-10 top-[55vh] md:left-1/4 left-10 vibrate"
-        id="#"
-      >
-        HARRY POTTER
-      </h1> -->
     </div>
 
     <div id="movies" class="bg-[#012B30] p-4">
@@ -889,39 +896,104 @@
       </div>
     </div>
 
-    <!-- Add this script to enable scroll on arrow click -->
-    <script>
-      const leftArrow = document.getElementById("left-arrow");
-      const rightArrow = document.getElementById("right-arrow");
-      const scrollContainer = document.getElementById("scroll-container");
-
-      // Scroll right when the right arrow is clicked
-      rightArrow.addEventListener("click", () => {
-        scrollContainer.scrollBy({
-          left: 300, // You can adjust this value to control how much it scrolls per click
-          behavior: "smooth",
-        });
-      });
-
-      // Scroll left when the left arrow is clicked
-      leftArrow.addEventListener("click", () => {
-        scrollContainer.scrollBy({
-          left: -300, // You can adjust this value to control how much it scrolls per click
-          behavior: "smooth",
-        });
-      });
-    </script>
-
-    <div class="bg-[#012B30] p-4" id="characters">
+    <div class="bg-[#012B30] p-4" id="get-your-card">
       <h2
         class="font-[harry-potter] text-[2.5rem] text-center pt-5 pb-5 vibrate text-white"
       >
         GET YOUR HOGWARTS CARD
       </h2>
+
+      <p
+        class="text-white text-sm leading-8 text-left w-[50%] m-auto p-3 mb-6 font-[MedievalSharp] tracking-wider"
+      >
+        Get your own
+        <span class="text-[#FDE047] font-bold">Hogwarts</span> student ID card
+        by filling out this form and receiving your card. It's the perfect way
+        to show off your wizarding credentials! If you don't know your
+        <span class="text-[#FDE047] font-bold">Hogwarts</span> house yet, take a
+        quiz and then come here to grab your ID card. The quiz will sort you
+        into one of the four famous houses: Gryffindor, Hufflepuff, Ravenclaw,
+        or Slytherin. Once you've discovered your true house, you'll be ready to
+        join the magical world with your very own personalized ID card. Don’t
+        miss out on this magical experience—your Hogwarts adventure awaits!
+      </p>
+      <div class="grid md:grid-cols-2 grid-cols-1 mt-20 gap-2">
+        <div class="w-full h-full flex justify-center items-center">
+          <img
+            src="https://res.cloudinary.com/dpvacdjua/image/upload/v1736270361/klipartz.com_cnrrqw.png"
+            alt=""
+            class="w-[70%]"
+          />
+        </div>
+        <div>
+          <form
+            id="form"
+            class="bg-[#00171C] flex flex-col md:h-[100vh] h-[32rem] w-[80%] justify-evenly items-center p-5 rounded-2xl"
+          >
+            <h3
+              class="text-center text-yellow-400 text-3xl font-[harry-potter]"
+            >
+              GET YOUR CARD
+            </h3>
+            <input
+              type="text"
+              id="name"
+              placeholder="YOUR NAME"
+              class="text-xl font-[harry-potter] text-center w-full rounded-lg p-4"
+              required
+            />
+
+            <input
+              type="text"
+              id="dob"
+              placeholder="YOUR DATE OF BIRTH"
+              required
+              class="text-xl font-[harry-potter] text-center w-full rounded-lg p-4"
+            />
+
+            <input
+              type="text"
+              id="gender"
+              required
+              placeholder="YOUR GENDER"
+              class="text-xl font-[harry-potter] text-center w-full rounded-lg p-4"
+            />
+
+            <select
+              id="house"
+              required
+              class="text-xl font-[harry-potter] text-center w-full rounded-lg p-4"
+            >
+              <option value="">CHOOSE YOUR HOUSE</option>
+              <option value="GRYFFINDOR">GRYFFINDOR</option>
+              <option value="SLYTHERIN">SLYTHERIN</option>
+              <option value="RAVENCLAW">RAVENCLAW</option>
+              <option value="HUFFLEPUFF">HUFFLEPUFF</option>
+            </select>
+
+            <label class="text-yellow-400 font-bold text-left w-full text-xs"
+              >UPLOAD YOUR PHOTO (OPTIONAL)</label
+            >
+
+            <input
+              type="file"
+              id="photo"
+              class="text-xl text-center w-full rounded-lg p-4"
+            />
+
+            <button
+              type="submit"
+              class="text-white bg-[#012B30] hover:bg-[#30a5b3] p-3 w-48 font-bold"
+            >
+              GET CARD
+            </button>
+          </form>
+        </div>
+      </div>
       <div id="cards" class="flex flex-col justify-center items-center">
         <div
-          id="gryffindor"
-          class="bg-[#CA9A2C] md:w-[50vw] md:h-[60vh] w-96 h-72 rounded-2xl flex flex-col relative mb-10"
+          id="GRYFFINDOR"
+          class="bg-[#CA9A2C] md:w-[50vw] md:h-[60vh] w-96 h-72 rounded-2xl flex-col relative mt-10 mb-10 hidden"
         >
           <div class="grid grid-cols-[1fr_1fr_1fr] w-full h-full">
             <div class="h-full w-full">
@@ -929,22 +1001,33 @@
                 src="https://i.pinimg.com/564x/8b/84/90/8b84902086769fdb555c50dc88ce83d3.jpg"
                 alt=""
                 class="h-full rounded-b-2xl rounded-tl-2xl"
+                id="GRYFFINDOR-IMG"
               />
             </div>
             <div class="p-2 md:pt-10 pt-2">
               <p class="font-bold">NAME</p>
-              <p class="text-[#C10D26] font-[griffindor] text-sm">
+              <p
+                class="text-[#C10D26] font-[griffindor] text-sm"
+                id="GRYFFINDOR-NAME"
+              >
                 HERMOINE GRANGER
               </p>
 
               <p class="font-bold">DOB</p>
-              <p class="text-[#C10D26] font-bold text-sm">09/19/1979</p>
+              <p class="text-[#C10D26] font-bold text-sm" id="GRYFFINDOR-DOB">
+                09/19/1979
+              </p>
 
               <p class="font-bold">GENDER</p>
-              <p class="text-[#C10D26] font-[griffindor] text-sm">FEMALE</p>
+              <p
+                class="text-[#C10D26] font-[griffindor] text-sm"
+                id="GRYFFINDOR-GENDER"
+              >
+                FEMALE
+              </p>
 
               <p class="font-bold">HOUSE</p>
-              <p class="text-[#C10D26] font-[griffindor] text-sm">GRIFFINDOR</p>
+              <p class="text-[#C10D26] font-[griffindor] text-sm">GRYFFINDOR</p>
             </div>
             <div class="flex flex-row w-[100%] relative">
               <div class="w-[10%] bg-[#C10D26] h-[80%]"></div>
@@ -966,8 +1049,8 @@
         </div>
 
         <div
-          id="slythrin"
-          class="bg-[#CA9A2C] md:w-[50vw] md:h-[60vh] w-96 h-72 rounded-2xl flex flex-col relative mb-10"
+          id="SLYTHERIN"
+          class="bg-[#CA9A2C] md:w-[50vw] md:h-[60vh] w-96 h-72 rounded-2xl hidden flex-col relative mb-10"
         >
           <div class="grid grid-cols-[1fr_1fr_1fr] w-full h-full">
             <div class="h-full w-full">
@@ -975,25 +1058,34 @@
                 src="https://media.harrypotterfanzone.com/draco-malfoy-order-of-the-phoenix-portrait-3.jpg"
                 alt=""
                 class="h-full rounded-b-2xl rounded-tl-2xl"
+                id="SLYTHERIN-IMG"
               />
             </div>
             <div class="p-2 md:pt-10 pt-2">
               <p class="font-bold">NAME</p>
-              <p class="text-[#17421F] font-[slythrin] text-lg font-bold">
+              <p
+                class="text-[#17421F] font-[slythrin] text-lg font-bold"
+                id="SLYTHERIN-NAME"
+              >
                 DRACO MALFOY
               </p>
 
               <p class="font-bold">DOB</p>
-              <p class="text-[#17421F] text-lg font-bold">09/19/1979</p>
+              <p class="text-[#17421F] text-lg font-bold" id="SLYTHERIN-DOB">
+                09/19/1979
+              </p>
 
               <p class="font-bold">GENDER</p>
-              <p class="text-[#17421F] font-[slythrin] text-lg font-bold">
+              <p
+                class="text-[#17421F] font-[slythrin] text-lg font-bold"
+                id="SLYTHERIN-GENDER"
+              >
                 MALE
               </p>
 
               <p class="font-bold">HOUSE</p>
               <p class="text-[#17421F] font-[slythrin] text-lg font-bold">
-                SLYTHRIN
+                SLYTHERIN
               </p>
             </div>
             <div class="flex flex-row w-[100%] relative">
@@ -1015,8 +1107,8 @@
         </div>
 
         <div
-          id="hufflepuff"
-          class="bg-[#CA9A2C] md:w-[50vw] md:h-[60vh] w-96 h-72 rounded-2xl flex flex-col relative mb-10"
+          id="HUFFLEPUFF"
+          class="bg-[#CA9A2C] md:w-[50vw] md:h-[60vh] w-96 h-72 rounded-2xl hidden flex-col relative mb-10"
         >
           <div class="grid grid-cols-[1fr_1fr_1fr] w-full h-full">
             <div class="h-full w-full">
@@ -1024,19 +1116,28 @@
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1IwhN0mgZDX11RrhuSEQc3_BHMnn4rA72Kg&s"
                 alt=""
                 class="h-full rounded-b-2xl rounded-tl-2xl"
+                id="HUFFLEPUFF-IMG"
               />
             </div>
             <div class="p-2 md:pt-10 pt-2">
               <p class="font-bold">NAME</p>
-              <p class="text-[#82471A] font-[hufflepuff] text-lg font-bold">
+              <p
+                class="text-[#82471A] font-[hufflepuff] text-lg font-bold"
+                id="HUFFLEPUFF-NAME"
+              >
                 CEDRIC DEGORI
               </p>
 
               <p class="font-bold">DOB</p>
-              <p class="text-[#82471A] text-lg font-bold">09/19/1979</p>
+              <p class="text-[#82471A] text-lg font-bold" id="HUFFLEPUFF-DOB">
+                09/19/1979
+              </p>
 
               <p class="font-bold">GENDER</p>
-              <p class="text-[#82471A] font-[hufflepuff] text-lg font-bold">
+              <p
+                class="text-[#82471A] font-[hufflepuff] text-lg font-bold"
+                id="HUFFLEPUFF-GENDER"
+              >
                 MALE
               </p>
 
@@ -1065,8 +1166,8 @@
         </div>
 
         <div
-          id="ravenclaw"
-          class="bg-[#005B7E] md:w-[50vw] md:h-[60vh] w-96 h-72 rounded-2xl flex flex-col relative mb-10"
+          id="RAVENCLAW"
+          class="bg-[#005B7E] md:w-[50vw] md:h-[60vh] w-96 h-72 rounded-2xl hidden flex-col relative mb-10"
         >
           <div class="grid grid-cols-[1fr_1fr_1fr] w-full h-full">
             <div class="h-full w-full">
@@ -1074,23 +1175,31 @@
                 src="https://i.namu.wiki/i/MROJTzx_vKYuAX2c2Y0Tn9IdYIir_vQDGEsgOqqjgiG4qFHASXCDT1Tt5e1kVUGnRk8SIxJLjLqEHl7meTHk3Q.webp"
                 alt=""
                 class="h-full rounded-b-2xl rounded-tl-2xl"
+                id="RAVENCLAW-IMG"
               />
             </div>
             <div class="p-2 md:pt-10 pt-2">
               <p class="font-bold">NAME</p>
-              <p class="text-white font-[ravenclaw] text-lg tracking-wider">
+              <p
+                class="text-white font-[ravenclaw] text-lg tracking-wider"
+                id="RAVENCLAW-NAME"
+              >
                 LUNA LOVEGOOD
               </p>
 
               <p class="font-bold">DOB</p>
               <p
                 class="text-white font-bold font-[ravenclaw] text-lg tracking-wider"
+                id="RAVENCLAW-DOB"
               >
                 09/19/1979
               </p>
 
               <p class="font-bold">GENDER</p>
-              <p class="text-white font-[ravenclaw] text-lg tracking-wider">
+              <p
+                class="text-white font-[ravenclaw] text-lg tracking-wider"
+                id="RAVENCLAW-GENDER"
+              >
                 FEMALE
               </p>
 
@@ -1130,5 +1239,29 @@
       <p>Created for Potter heads all aorund Pakistan , Bangladesh and India</p>
       <p><span class="text-2xl">🧙‍♂️🧙‍♂️</span></p>
     </div>
+
+    <!-- Add this script to enable scroll on arrow click -->
+    <script>
+      const leftArrow = document.getElementById("left-arrow");
+      const rightArrow = document.getElementById("right-arrow");
+      const scrollContainer = document.getElementById("scroll-container");
+
+      // Scroll right when the right arrow is clicked
+      rightArrow.addEventListener("click", () => {
+        scrollContainer.scrollBy({
+          left: 300, // You can adjust this value to control how much it scrolls per click
+          behavior: "smooth",
+        });
+      });
+
+      // Scroll left when the left arrow is clicked
+      leftArrow.addEventListener("click", () => {
+        scrollContainer.scrollBy({
+          left: -300, // You can adjust this value to control how much it scrolls per click
+          behavior: "smooth",
+        });
+      });
+    </script>
+    <script src="index.js"></script>
   </body>
 </html>
