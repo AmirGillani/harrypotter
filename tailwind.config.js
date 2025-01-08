@@ -2,6 +2,7 @@
 module.exports = {
   content: [
     "./index.html",  // If you're using an HTML file
+    "./quizz.html",  // If you're using an HTML file
     "./**/*.html",    // If you're using HTML files inside subdirectories
   ],
   theme: {

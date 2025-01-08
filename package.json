@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tailwindcss -i src/styles.css -o public/styles.css",
-    "start": "nodemon --watch src --watch ./public/index.html --exec npm run build"
+    "start": "nodemon --watch src --watch ./public/index.html --watch ./public/quizz.html --exec npm run build"
   },
   "keywords": [],
   "author": "",

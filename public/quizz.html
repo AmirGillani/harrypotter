@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://w7.pngwing.com/pngs/1009/610/png-transparent-harry-potter-icon-thumbnail.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=MedievalSharp&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+      * {
+        scroll-behavior: smooth;
+      }
+      /* Hide the scrollbar */
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+      .scrollbar-hide {
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
+        scrollbar-width: none; /* Firefox */
+      }
+      @font-face {
+        font-family: "harry-potter"; /* Name you will use to reference the font */
+
+        src: url("https://res.cloudinary.com/dpvacdjua/raw/upload/v1736007876/HARRYP___jcyjop.TTF");
+      }
+
+      @font-face {
+        font-family: "griffindor"; /* Name you will use to reference the font */
+
+        src: url("https://res.cloudinary.com/dpvacdjua/raw/upload/v1736257111/griffindor_cm3gvi.otf");
+      }
+
+      @font-face {
+        font-family: "slythrin"; /* Name you will use to reference the font */
+
+        src: url("https://res.cloudinary.com/dpvacdjua/raw/upload/v1736257111/stythrin_nf60ay.ttf");
+      }
+
+      @font-face {
+        font-family: "ravenclaw"; /* Name you will use to reference the font */
+
+        src: url("https://res.cloudinary.com/dpvacdjua/raw/upload/v1736257110/ravenclaw_cs6tbc.otf");
+      }
+
+      @font-face {
+        font-family: "hufflepuff"; /* Name you will use to reference the font */
+
+        src: url("https://res.cloudinary.com/dpvacdjua/raw/upload/v1736257111/hufflepuff_ao7pgq.ttf");
+      }
+
+      /* Define the vibrating animation */
+      @keyframes vibration {
+        0% {
+          transform: translateY(0);
+        }
+        25% {
+          transform: translateY(-5px); /* Move left */
+        }
+        50% {
+          transform: translateX(5px); /* Move right */
+        }
+        75% {
+          transform: translateX(-5px); /* Move left */
+        }
+        100% {
+          transform: translateY(0); /* Return to the original position */
+        }
+      }
+
+      /* Apply the animation to the h1 element */
+      .vibrate {
+        display: block;
+        text-align: center;
+        animation: vibration 5s linear infinite; /* Vibration animation */
+      }
+    </style>
+
+    <style>
+      /* Additional CSS for spinner animation */
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+
+    <title>HARRY POTTER QUIZ</title>
+  </head>
+  <body class="bg-gray-100">
+
+    <div class="bg-[#012B30] p-4" id="quiz">
+        <a
+        href="./index.html"
+        class="font-[harry-potter] text-xl text-center p-2 text-white hover:text-gray-500 hover:cursor-pointer  bg-black"
+      >
+      Back To Home
+        
+    </a>
+      <h2
+        class="font-[harry-potter] text-[2.5rem] text-center pt-5 pb-5 vibrate text-white"
+      >
+        Hogwarts House Sorting Quizz
+      </h2>
+
+      <div id="quizForm" class="">
+        <!-- Question 1 -->
+        <div
+          class="bg-white p-4 w-full md:h-[115vh] h-[45vh] rounded-lg mt-5 mb-5"
+        >
+          <div class="md:h-[80vh] h-[20vh]">
+            <img
+              src="https://wallpapers.com/images/featured/harry-potter-gi5aixvd4d26cpij.jpg"
+              alt=""
+              class="w-full h-full"
+            />
+          </div>
+
+          <div
+            class="p-3 flex flex-col justify-between items-start md:text-xl text-sm md:h-[30vh] h-[20vh]"
+          >
+            <p
+              class="text-[#00171C] font-semibold font-[harry-potter] md:text-4xl text-2xl tracking-wider"
+            >
+              1. What is your preferred way to spend the day?
+            </p>
+
+            <div
+              class="grid grid-cols-2 md:text-3xl text-sm font-[MedievalSharp] w-full"
+            >
+              <label class="w-full"
+                ><input type="radio" name="question1" value="gryffindor" />
+                Adventure and courage</label
+              >
+              <label class="w-full"
+                ><input type="radio" name="question1" value="slytherin" /> Power
+                and strategy</label
+              >
+            </div>
+            <div
+              class="grid grid-cols-2 md:text-3xl text-sm font-[MedievalSharp] w-full"
+            >
+              <label class="w-full"
+                ><input type="radio" name="question1" value="hufflepuff" /> Hard
+                work and loyalty</label
+              >
+              <label
+                ><input type="radio" name="question1" value="ravenclaw" />
+                Learning and creativity</label
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div
+          class="bg-white p-4 w-full md:h-[115vh] h-[45vh] rounded-lg mt-5 mb-5"
+        >
+          <div class="md:h-[80vh] h-[20]">
+            <img
+              src="https://pixelz.cc/wp-content/uploads/2017/11/harry-potter-and-the-deathly-hallows-hermione-uhd-4k-wallpaper.jpg"
+              alt=""
+              class="w-full h-full"
+            />
+          </div>
+
+          <div
+            class="p-3 flex flex-col justify-between items-start md:text-xl text-sm md:h-[30vh] h-[20vh]"
+          >
+            <p
+              class="text-[#00171C] font-semibold font-[harry-potter] md:text-4xl text-2xl tracking-wider"
+            >
+              2. How do you react to challenges?
+            </p>
+
+            <div
+              class="grid grid-cols-2 md:text-3xl text-sm font-[MedievalSharp] w-full"
+            >
+              <label class="w-full"
+                ><input type="radio" name="question2" value="gryffindor" /> Face
+                them head-on</label
+              >
+              <label class="w-full"
+                ><input type="radio" name="question2" value="slytherin" />Plan
+                and outsmart them</label
+              >
+            </div>
+            <div
+              class="grid grid-cols-2 md:text-3xl text-sm font-[MedievalSharp] w-full"
+            >
+              <label class="w-full"
+                ><input type="radio" name="question2" value="hufflepuff" />
+                Persevere and work hard</label
+              >
+              <label
+                ><input type="radio" name="question2" value="ravenclaw" />
+                Analyze and solve them creatively</label
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+
+        <div
+          class="bg-white p-4 w-full md:h-[115vh] h-[45vh] rounded-lg mt-5 mb-5"
+        >
+          <div class="md:h-[80vh] h-[20]">
+            <img
+              src="https://i.pinimg.com/736x/ee/08/a7/ee08a7b3739c8ea235920a45470dc2ca.jpg"
+              alt=""
+              class="w-full h-full"
+            />
+          </div>
+
+          <div
+            class="p-3 flex flex-col justify-between items-start md:text-xl text-sm md:h-[30vh] h-[20vh]"
+          >
+            <p
+              class="text-[#00171C] font-semibold font-[harry-potter] md:text-4xl text-2xl tracking-wider"
+            >
+              3.What quality do you value most in a friend?
+            </p>
+
+            <div
+              class="grid grid-cols-2 md:text-3xl text-sm font-[MedievalSharp] w-full"
+            >
+              <label class="w-full"
+                ><input type="radio" name="question3" value="gryffindor" />
+                Bravery</label
+              >
+              <label class="w-full"
+                ><input
+                  type="radio"
+                  name="question3"
+                  value="slytherin"
+                />Ambition
+              </label>
+            </div>
+            <div
+              class="grid grid-cols-2 md:text-3xl text-sm font-[MedievalSharp] w-full"
+            >
+              <label class="w-full"
+                ><input type="radio" name="question3" value="hufflepuff" />
+                Loyalty</label
+              >
+              <label
+                ><input type="radio" name="question3" value="ravenclaw" />
+                Intelligence</label
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 4 -->
+
+        <div
+          class="bg-white p-4 w-full md:h-[115vh] h-[45vh] rounded-lg mt-5 mb-5"
+        >
+          <div class="md:h-[80vh] h-[20]">
+            <img
+              src="https://e1.pxfuel.com/desktop-wallpaper/527/94/desktop-wallpaper-legenda-harry-potter-and-the-philosopher-s-stone-harry-potter-and-the-philosophers-stone.jpg"
+              alt=""
+              class="w-full h-full"
+            />
+          </div>
+
+          <div
+            class="p-3 flex flex-col justify-between items-start md:text-xl text-sm md:h-[30vh] h-[20vh]"
+          >
+            <p
+              class="text-[#00171C] font-semibold font-[harry-potter] md:text-4xl text-2xl tracking-wider"
+            >
+              4. How would you approach a difficult task?
+            </p>
+
+            <div
+              class="grid grid-cols-2 md:text-3xl text-sm font-[MedievalSharp] w-full"
+            >
+              <label class="w-full"
+                ><input type="radio" name="question4" value="gryffindor" /> Dive
+                in and take risks</label
+              >
+              <label class="w-full"
+                ><input
+                  type="radio"
+                  name="question4"
+                  value="slytherin"
+                />Strategize and plan
+              </label>
+            </div>
+            <div
+              class="grid grid-cols-2 md:text-3xl text-sm font-[MedievalSharp] w-full"
+            >
+              <label class="w-full"
+                ><input type="radio" name="question4" value="hufflepuff" />
+                Work steadily and consistently</label
+              >
+              <label
+                ><input type="radio" name="question4" value="ravenclaw" /> Look
+                for the most logical solution</label
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 5 -->
+
+        <div
+          class="bg-white p-4 w-full md:h-[115vh] h-[45vh] rounded-lg mt-5 mb-5"
+        >
+          <div class="md:h-[80vh] h-[20]">
+            <img
+              src="https://c4.wallpaperflare.com/wallpaper/20/369/125/harry-potter-wallpaper-preview.jpg"
+              alt=""
+              class="w-full h-full"
+            />
+          </div>
+
+          <div
+            class="p-3 flex flex-col justify-between items-start md:text-xl text-sm md:h-[30vh] h-[20vh]"
+          >
+            <p
+              class="text-[#00171C] font-semibold font-[harry-potter] md:text-4xl text-2xl tracking-wider"
+            >
+              5. Which of these animals do you prefer?
+            </p>
+
+            <div
+              class="grid grid-cols-2 md:text-3xl text-sm font-[MedievalSharp] w-full"
+            >
+              <label class="w-full"
+                ><input type="radio" name="question5" value="gryffindor" />
+                Lion</label
+              >
+              <label class="w-full"
+                ><input type="radio" name="question5" value="slytherin" />Snake
+              </label>
+            </div>
+            <div
+              class="grid grid-cols-2 md:text-3xl text-sm font-[MedievalSharp] w-full"
+            >
+              <label class="w-full"
+                ><input type="radio" name="question5" value="hufflepuff" />
+                Badger</label
+              >
+              <label
+                ><input type="radio" name="question5" value="ravenclaw" />
+                Eagle</label
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 6 -->
+
+        <div
+          class="bg-white p-4 w-full md:h-[115vh] h-[45vh] rounded-lg mt-5 mb-5"
+        >
+          <div class="md:h-[80vh] h-[20]">
+            <img
+              src="https://wallpaper.dog/large/16988761.jpg"
+              alt=""
+              class="w-full h-full"
+            />
+          </div>
+
+          <div
+            class="p-3 flex flex-col justify-between items-start md:text-xl text-sm md:h-[30vh] h-[20vh]"
+          >
+            <p
+              class="text-[#00171C] font-semibold font-[harry-potter] md:text-4xl text-2xl tracking-wider"
+            >
+              6. How do you deal with conflict?
+            </p>
+
+            <div
+              class="grid grid-cols-2 md:text-3xl text-sm font-[MedievalSharp] w-full"
+            >
+              <label class="w-full"
+                ><input type="radio" name="question6" value="gryffindor" />
+                Stand up for myself</label
+              >
+              <label class="w-full"
+                ><input
+                  type="radio"
+                  name="question6"
+                  value="slytherin"
+                />Manipulate the situation
+              </label>
+            </div>
+            <div
+              class="grid grid-cols-2 md:text-3xl text-sm font-[MedievalSharp] w-full"
+            >
+              <label class="w-full"
+                ><input type="radio" name="question6" value="hufflepuff" />Seek
+                a peaceful resolution</label
+              >
+              <label
+                ><input type="radio" name="question6" value="ravenclaw" />
+                Analyze and talk it through</label
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 7 -->
+
+        <div
+          class="bg-white p-4 w-full md:h-[115vh] h-[45vh] rounded-lg mt-5 mb-5"
+        >
+          <div class="md:h-[80vh] h-[20]">
+            <img
+              src="https://wallpaper.dog/large/16988761.jpg"
+              alt=""
+              class="w-full h-full"
+            />
+          </div>
+
+          <div
+            class="p-3 flex flex-col justify-between items-start md:text-xl text-sm md:h-[30vh] h-[20vh]"
+          >
+            <p
+              class="text-[#00171C] font-semibold font-[harry-potter] md:text-4xl text-2xl tracking-wider"
+            >
+              7. What's your favorite type of class?
+            </p>
+
+            <div
+              class="grid grid-cols-2 md:text-3xl text-sm font-[MedievalSharp] w-full"
+            >
+              <label class="w-full"
+                ><input type="radio" name="question7" value="gryffindor" />
+                Defense Against the Dark Arts</label
+              >
+              <label class="w-full"
+                ><input
+                  type="radio"
+                  name="question7"
+                  value="slytherin"
+                />Potions
+              </label>
+            </div>
+            <div
+              class="grid grid-cols-2 md:text-3xl text-sm font-[MedievalSharp] w-full"
+            >
+              <label class="w-full"
+                ><input
+                  type="radio"
+                  name="question7"
+                  value="hufflepuff"
+                />Herbology</label
+              >
+              <label
+                ><input type="radio" name="question7" value="ravenclaw" />
+                Transfiguration</label
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 8 -->
+
+        <div
+          class="bg-white p-4 w-full md:h-[115vh] h-[45vh] rounded-lg mt-5 mb-5"
+        >
+          <div class="md:h-[80vh] h-[20]">
+            <img
+              src="https://wallpaper.dog/large/16988761.jpg"
+              alt=""
+              class="w-full h-full"
+            />
+          </div>
+
+          <div
+            class="p-3 flex flex-col justify-between items-start md:text-xl text-sm md:h-[30vh] h-[20vh]"
+          >
+            <p
+              class="text-[#00171C] font-semibold font-[harry-potter] md:text-4xl text-2xl tracking-wider"
+            >
+              8. What is your idea of a perfect weekend?
+            </p>
+
+            <div
+              class="grid grid-cols-2 md:text-3xl text-sm font-[MedievalSharp] w-full"
+            >
+              <label class="w-full"
+                ><input type="radio" name="question8" value="gryffindor" />
+                Adventure and exploring new places</label
+              >
+              <label class="w-full"
+                ><input
+                  type="radio"
+                  name="question8"
+                  value="slytherin"
+                />Networking and making powerful connections
+              </label>
+            </div>
+            <div
+              class="grid grid-cols-2 md:text-3xl text-sm font-[MedievalSharp] w-full"
+            >
+              <label class="w-full"
+                ><input
+                  type="radio"
+                  name="question8"
+                  value="hufflepuff"
+                />Relaxing with close friends and family</label
+              >
+              <label
+                ><input type="radio" name="question8" value="ravenclaw" />
+                Reading books and learning something new</label
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 9 -->
+
+        <div
+          class="bg-white p-4 w-full md:h-[115vh] h-[45vh] rounded-lg mt-5 mb-5"
+        >
+          <div class="md:h-[80vh] h-[20]">
+            <img
+              src="https://wallpaper.dog/large/16988761.jpg"
+              alt=""
+              class="w-full h-full"
+            />
+          </div>
+
+          <div
+            class="p-3 flex flex-col justify-between items-start md:text-xl text-sm md:h-[30vh] h-[20vh]"
+          >
+            <p
+              class="text-[#00171C] font-semibold font-[harry-potter] md:text-4xl text-2xl tracking-wider"
+            >
+              9. How do you feel about following rules?
+            </p>
+
+            <div
+              class="grid grid-cols-2 md:text-3xl text-sm font-[MedievalSharp] w-full"
+            >
+              <label class="w-full"
+                ><input type="radio" name="question9" value="gryffindor" />Rules
+                are meant to be challenged</label
+              >
+              <label class="w-full"
+                ><input type="radio" name="question9" value="slytherin" />Rules
+                are there to be bent
+              </label>
+            </div>
+            <div
+              class="grid grid-cols-2 md:text-3xl text-sm font-[MedievalSharp] w-full"
+            >
+              <label class="w-full"
+                ><input type="radio" name="question9" value="hufflepuff" />Rules
+                should be followed for harmony</label
+              >
+              <label
+                ><input type="radio" name="question9" value="ravenclaw" /> Rules
+                help keep things in order</label
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 10 -->
+
+        <div
+          class="bg-white p-4 w-full md:h-[115vh] h-[45vh] rounded-lg mt-5 mb-5"
+        >
+          <div class="md:h-[80vh] h-[20]">
+            <img
+              src="https://wallpaper.dog/large/16988761.jpg"
+              alt=""
+              class="w-full h-full"
+            />
+          </div>
+
+          <div
+            class="p-3 flex flex-col justify-between items-start md:text-xl text-sm md:h-[30vh] h-[20vh]"
+          >
+            <p
+              class="text-[#00171C] font-semibold font-[harry-potter] md:text-4xl text-2xl tracking-wider"
+            >
+              10. What's your greatest strength?
+            </p>
+
+            <div
+              class="grid grid-cols-2 md:text-3xl text-sm font-[MedievalSharp] w-full"
+            >
+              <label class="w-full"
+                ><input
+                  type="radio"
+                  name="question10"
+                  value="gryffindor"
+                />Courage</label
+              >
+              <label class="w-full"
+                ><input
+                  type="radio"
+                  name="question10"
+                  value="slytherin"
+                />Ambition
+              </label>
+            </div>
+            <div
+              class="grid grid-cols-2 md:text-3xl text-sm font-[MedievalSharp] w-full"
+            >
+              <label class="w-full"
+                ><input
+                  type="radio"
+                  name="question10"
+                  value="hufflepuff"
+                />Dedication</label
+              >
+              <label
+                ><input type="radio" name="question10" value="ravenclaw" />
+                Intelligence</label
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 11 -->
+
+        <div
+          class="bg-white p-4 w-full md:h-[115vh] h-[45vh] rounded-lg mt-5 mb-5"
+        >
+          <div class="md:h-[80vh] h-[20]">
+            <img
+              src="https://wallpaper.dog/large/16988761.jpg"
+              alt=""
+              class="w-full h-full"
+            />
+          </div>
+
+          <div
+            class="p-3 flex flex-col justify-between items-start md:text-xl text-sm md:h-[30vh] h-[20vh]"
+          >
+            <p
+              class="text-[#00171C] font-semibold font-[harry-potter] md:text-4xl text-2xl tracking-wider"
+            >
+              11. What motivates you?
+            </p>
+
+            <div
+              class="grid grid-cols-2 md:text-3xl text-sm font-[MedievalSharp] w-full"
+            >
+              <label class="w-full"
+                ><input type="radio" name="question11" value="gryffindor" /> The
+                thrill of victory</label
+              >
+              <label class="w-full"
+                ><input
+                  type="radio"
+                  name="question11"
+                  value="slytherin"
+                />Achieving power
+              </label>
+            </div>
+            <div
+              class="grid grid-cols-2 md:text-3xl text-sm font-[MedievalSharp] w-full"
+            >
+              <label class="w-full"
+                ><input type="radio" name="question11" value="hufflepuff" />The
+                joy of helping others</label
+              >
+              <label
+                ><input type="radio" name="question11" value="ravenclaw" /> The
+                pursuit of knowledge</label
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 12 -->
+
+        <div
+          class="bg-white p-4 w-full md:h-[115vh] h-[45vh] rounded-lg mt-5 mb-5"
+        >
+          <div class="md:h-[80vh] h-[20]">
+            <img
+              src="https://wallpaper.dog/large/16988761.jpg"
+              alt=""
+              class="w-full h-full"
+            />
+          </div>
+
+          <div
+            class="p-3 flex flex-col justify-between items-start md:text-xl text-sm md:h-[30vh] h-[20vh]"
+          >
+            <p
+              class="text-[#00171C] font-semibold font-[harry-potter] md:text-4xl text-2xl tracking-wider"
+            >
+              12. What would you most likely be found doing at Hogwarts?
+            </p>
+
+            <div
+              class="grid grid-cols-2 md:text-3xl text-sm font-[MedievalSharp] w-full"
+            >
+              <label class="w-full"
+                ><input
+                  type="radio"
+                  name="question12"
+                  value="gryffindor"
+                />Fighting for justice</label
+              >
+              <label class="w-full"
+                ><input type="radio" name="question12" value="slytherin" />Making
+                plans for the future
+              </label>
+            </div>
+            <div
+              class="grid grid-cols-2 md:text-3xl text-sm font-[MedievalSharp] w-full"
+            >
+              <label class="w-full"
+                ><input
+                  type="radio"
+                  name="question12"
+                  value="hufflepuff"
+                />Helping others</label
+              >
+              <label
+                ><input type="radio" name="question12" value="ravenclaw" />
+                Studying magic</label
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 13 -->
+
+        <div
+          class="bg-white p-4 w-full md:h-[115vh] h-[45vh] rounded-lg mt-5 mb-5"
+        >
+          <div class="md:h-[80vh] h-[20]">
+            <img
+              src="https://wallpaper.dog/large/16988761.jpg"
+              alt=""
+              class="w-full h-full"
+            />
+          </div>
+
+          <div
+            class="p-3 flex flex-col justify-between items-start md:text-xl text-sm md:h-[30vh] h-[20vh]"
+          >
+            <p
+              class="text-[#00171C] font-semibold font-[harry-potter] md:text-4xl text-2xl tracking-wider"
+            >
+              13. Which of these words best describes you?
+            </p>
+
+            <div
+              class="grid grid-cols-2 md:text-3xl text-sm font-[MedievalSharp] w-full"
+            >
+              <label class="w-full"
+                ><input
+                  type="radio"
+                  name="question13"
+                  value="gryffindor"
+                />Brave</label
+              >
+              <label class="w-full"
+                ><input type="radio" name="question13" value="slytherin" />Clever
+              </label>
+            </div>
+            <div
+              class="grid grid-cols-2 md:text-3xl text-sm font-[MedievalSharp] w-full"
+            >
+              <label class="w-full"
+                ><input
+                  type="radio"
+                  name="question13"
+                  value="hufflepuff"
+                />Loyal</label
+              >
+              <label
+                ><input type="radio" name="question13" value="ravenclaw" />
+                Wise</label
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 14 -->
+
+        <div
+          class="bg-white p-4 w-full md:h-[115vh] h-[45vh] rounded-lg mt-5 mb-5"
+        >
+          <div class="md:h-[80vh] h-[20]">
+            <img
+              src="https://wallpaper.dog/large/16988761.jpg"
+              alt=""
+              class="w-full h-full"
+            />
+          </div>
+
+          <div
+            class="p-3 flex flex-col justify-between items-start md:text-xl text-sm md:h-[30vh] h-[20vh]"
+          >
+            <p
+              class="text-[#00171C] font-semibold font-[harry-potter] md:text-4xl text-2xl tracking-wider"
+            >
+              14. What's your approach to leadership?
+            </p>
+
+            <div
+              class="grid grid-cols-2 md:text-3xl text-sm font-[MedievalSharp] w-full"
+            >
+              <label class="w-full"
+                ><input type="radio" name="question14" value="gryffindor" />Lead
+                by example</label
+              >
+              <label class="w-full"
+                ><input type="radio" name="question14" value="slytherin" />Lead
+                by manipulation
+              </label>
+            </div>
+            <div
+              class="grid grid-cols-2 md:text-3xl text-sm font-[MedievalSharp] w-full"
+            >
+              <label class="w-full"
+                ><input type="radio" name="question14" value="hufflepuff" />Lead
+                with care and support</label
+              >
+              <label
+                ><input type="radio" name="question14" value="ravenclaw" /> Lead
+                with logic and reason</label
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 15 -->
+
+        <div
+          class="bg-white p-4 w-full md:h-[115vh] h-[45vh] rounded-lg mt-5 mb-5"
+        >
+          <div class="md:h-[80vh] h-[20]">
+            <img
+              src="https://wallpaper.dog/large/16988761.jpg"
+              alt=""
+              class="w-full h-full"
+            />
+          </div>
+
+          <div
+            class="p-3 flex flex-col justify-between items-start md:text-xl text-sm md:h-[30vh] h-[20vh]"
+          >
+            <p
+              class="text-[#00171C] font-semibold font-[harry-potter] md:text-4xl text-2xl tracking-wider"
+            >
+              15. How do you view your future?
+            </p>
+
+            <div
+              class="grid grid-cols-2 md:text-3xl text-sm font-[MedievalSharp] w-full"
+            >
+              <label class="w-full"
+                ><input
+                  type="radio"
+                  name="question15"
+                  value="gryffindor"
+                />Filled with adventure</label
+              >
+              <label class="w-full"
+                ><input type="radio" name="question15" value="slytherin" />Full
+                of power and influence
+              </label>
+            </div>
+            <div
+              class="grid grid-cols-2 md:text-3xl text-sm font-[MedievalSharp] w-full"
+            >
+              <label class="w-full"
+                ><input type="radio" name="question15" value="hufflepuff" />A
+                peaceful and fulfilling life</label
+              >
+              <label
+                ><input type="radio" name="question15" value="ravenclaw" />
+                Endless possibilities for growth</label
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <button
+            id="submitQuiz"
+            class="bg-blue-500 text-white px-6 py-2 rounded-md"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+
+      <div id="result" class="hidden mt-6 bg-white md:w-[40%] w-[95%] p-4 rounded-lg shadow-sm m-auto justify-center items-center flex">
+        <p class="text-2xl font-bold"><span class="text-red-600 font-extrabold">Congratulations!</span> You are sorted into:</p>
+        <div id="houseName" class="house-name"></div>
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("submitQuiz")
+        .addEventListener("click", function () {
+          // Get the answers from the quiz form
+          let gryffindorCount = 0;
+          let slytherinCount = 0;
+          let hufflepuffCount = 0;
+          let ravenclawCount = 0;
+          let img= "";
+          const answers = document.querySelectorAll(
+            'input[type="radio"]:checked'
+          );
+          answers.forEach((answer) => {
+            switch (answer.value) {
+              case "gryffindor":
+                gryffindorCount++;
+                break;
+              case "slytherin":
+                slytherinCount++;
+                break;
+              case "hufflepuff":
+                hufflepuffCount++;
+                break;
+              case "ravenclaw":
+                ravenclawCount++;
+                break;
+            }
+          });
+
+          
+          // Sort the user into the house with the most points
+          let house = "";
+          let maxCount = Math.max(
+            gryffindorCount,
+            slytherinCount,
+            hufflepuffCount,
+            ravenclawCount
+          );
+
+          if (maxCount === gryffindorCount) {
+            house = "Gryffindor";
+            img="https://res.cloudinary.com/dpvacdjua/image/upload/v1736259572/2796360_gryffindor-harry-potter-gryffindor-necklace-transparent-png-removebg-preview_a7e4wy.png";
+          } else if (maxCount === slytherinCount) {
+            house = "Slytherin";
+            img="https://res.cloudinary.com/dpvacdjua/image/upload/v1736259571/Harry_Potter_And_The_Philosopher_s_Stone_Sorting_Hat_Slytherin_House_Hogwarts_PNG_-_Free_Download-removebg-preview_wqg6kd.png";
+          } else if (maxCount === hufflepuffCount) {
+            house = "Hufflepuff";
+            img="https://res.cloudinary.com/dpvacdjua/image/upload/v1736262834/pngegg-removebg-preview_s7sacv.png";
+          } else {
+            house = "Ravenclaw";
+            img="https://res.cloudinary.com/dpvacdjua/image/upload/v1736259572/pngegg__1_-removebg-preview_fuzv1b.png";
+          }
+
+          // Display the result
+          document.getElementById("quizForm").classList.add("hidden");
+          document.getElementById("result").classList.remove("hidden");
+
+          const houseName = document.getElementById("houseName");
+          houseName.innerHTML = `<img src=${img} /><h1 class="font-[harry-potter] text-6xl text-[#012B30] font-bold text-center">${house}</h1>`;
+
+          // Change the background color based on the house
+          houseName.className = `house-name ${house.toLowerCase()}`;
+        });
+    </script>
+  </body>
+</html>
