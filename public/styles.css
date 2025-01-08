@@ -1392,6 +1392,10 @@ video {
     height: 60vh;
   }
 
+  .md\:h-\[70vh\] {
+    height: 70vh;
+  }
+
   .md\:h-\[80vh\] {
     height: 80vh;
   }
