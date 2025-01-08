@@ -732,8 +732,8 @@ video {
   height: 400px;
 }
 
-.h-\[45vh\] {
-  height: 45vh;
+.h-\[50vh\] {
+  height: 50vh;
 }
 
 .h-\[80\%\] {
@@ -758,6 +758,10 @@ video {
 
 .w-16 {
   width: 4rem;
+}
+
+.w-32 {
+  width: 8rem;
 }
 
 .w-48 {
@@ -824,12 +828,12 @@ video {
   width: 90%;
 }
 
-.w-\[95\%\] {
-  width: 95%;
-}
-
 .w-full {
   width: 100%;
+}
+
+.w-screen {
+  width: 100vw;
 }
 
 .flex-shrink-0 {
@@ -1025,6 +1029,11 @@ video {
   background-color: rgb(23 66 31 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[\#2ed0e2\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(46 208 226 / var(--tw-bg-opacity, 1));
+}
+
 .bg-\[\#40d2f3\]\/15 {
   background-color: rgb(64 210 243 / 0.15);
 }
@@ -1052,11 +1061,6 @@ video {
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
-}
-
-.bg-blue-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
 }
 
 .bg-gray-100 {
@@ -1281,6 +1285,11 @@ video {
   color: rgb(253 224 71 / var(--tw-text-opacity, 1));
 }
 
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity, 1));
+}
+
 .text-red-600 {
   --tw-text-opacity: 1;
   color: rgb(220 38 38 / var(--tw-text-opacity, 1));
@@ -1323,6 +1332,11 @@ video {
 
 .hover\:cursor-pointer:hover {
   cursor: pointer;
+}
+
+.hover\:bg-\[\#228a96\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 138 150 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:bg-\[\#30a5b3\]:hover {
