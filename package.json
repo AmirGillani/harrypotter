@@ -3,20 +3,21 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-   "build": "tailwindcss -i src/styles.css -o public/styles.css",
-"start": "nodemon --watch src --watch ./public/index.html --exec npm run build"
-
+    "build": "tailwindcss -i src/styles.css -o public/styles.css",
+    "start": "nodemon --watch src --watch ./public/index.html --exec npm run build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
-  
-    "dependencies": {
-      "tailwindcss": "^3.0.0",
-      "autoprefixer": "^10.0.0"
-    },
-    "devDependencies": {
-      "postcss": "^8.0.0"
-    }
+  "dependencies": {
+    "autoprefixer": "^10.0.0",
+    "tailwindcss": "^3.0.0"
+  },
+  "devDependencies": {
+    "postcss": "^8.0.0"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "description": ""
 }

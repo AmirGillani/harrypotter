@@ -86,13 +86,11 @@
     </style>
 
     <title>HARRY POTTER || BOOKS IN HINDI || MOVIES IN HINDI</title>
+<!-- Include html2canvas from CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
 
-     <!-- Add html2canvas from CDN -->
-     <script src="../lib/html2canvas.min.js"></script>
-
-     <!-- Add jsPDF from CDN -->
-     <script src="../lib/jspdf.umd.min.js"></script>
-
+<!-- Include jsPDF from CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   </head>
   <body class="scroll-smooth cursor-custom">
     <div
@@ -997,257 +995,253 @@
       </div>
 
       <div
-      id="cards"
-      class="flex flex-col justify-center items-center p-2 mt-8"
-    >
-
-
-      <div
-        id="GRYFFINDOR"
-        class="bg-[#CA9A2C] md:w-[50vw] md:h-[60vh] w-96 h-72 rounded-2xl flex-col relative mt-10 mb-10 hidden"
+        id="cards"
+        class="flex flex-col justify-center items-center p-2 mt-8"
       >
-        <div class="grid grid-cols-[1fr_1fr_1fr] w-full h-full">
-          <div class="h-full w-full">
-            <img
-              src="https://i.pinimg.com/564x/8b/84/90/8b84902086769fdb555c50dc88ce83d3.jpg"
-              alt=""
-              class="h-full rounded-b-2xl rounded-tl-2xl object-cover"
-              id="GRYFFINDOR-IMG"
-            />
+        <div
+          id="GRYFFINDOR"
+          class="bg-[#CA9A2C] md:w-[50vw] md:h-[60vh] w-96 h-72 rounded-2xl flex-col relative mt-10 mb-10 hidden"
+        >
+          <div class="grid grid-cols-[1fr_1fr_1fr] w-full h-full">
+            <div class="h-full w-full">
+              <img
+                src="https://i.pinimg.com/564x/8b/84/90/8b84902086769fdb555c50dc88ce83d3.jpg"
+                alt=""
+                class="h-full rounded-b-2xl rounded-tl-2xl object-cover"
+                id="GRYFFINDOR-IMG"
+              />
+            </div>
+            <div class="p-2 md:pt-10 pt-2">
+              <p class="font-bold">NAME</p>
+              <p
+                class="text-[#C10D26] font-[griffindor] text-sm"
+                id="GRYFFINDOR-NAME"
+              >
+                HERMOINE GRANGER
+              </p>
+
+              <p class="font-bold">DOB</p>
+              <p class="text-[#C10D26] font-bold text-sm" id="GRYFFINDOR-DOB">
+                09/19/1979
+              </p>
+
+              <p class="font-bold">GENDER</p>
+              <p
+                class="text-[#C10D26] font-[griffindor] text-sm"
+                id="GRYFFINDOR-GENDER"
+              >
+                FEMALE
+              </p>
+
+              <p class="font-bold">HOUSE</p>
+              <p class="text-[#C10D26] font-[griffindor] text-sm">GRYFFINDOR</p>
+            </div>
+            <div class="flex flex-row w-[100%] relative">
+              <div class="w-[10%] bg-[#C10D26] h-[80%]"></div>
+              <div class="w-[20%] h-[80%]"></div>
+              <div class="w-[40%] bg-[#C10D26] h-[80%]"></div>
+              <div class="w-[30%] h-[80%]"></div>
+              <img
+                src="https://res.cloudinary.com/dpvacdjua/image/upload/v1736259572/2796360_gryffindor-harry-potter-gryffindor-necklace-transparent-png-removebg-preview_a7e4wy.png"
+                alt=""
+                class="absolute top-6"
+              />
+            </div>
           </div>
-          <div class="p-2 md:pt-10 pt-2">
-            <p class="font-bold">NAME</p>
-            <p
-              class="text-[#C10D26] font-[griffindor] text-sm"
-              id="GRYFFINDOR-NAME"
-            >
-              HERMOINE GRANGER
-            </p>
-
-            <p class="font-bold">DOB</p>
-            <p class="text-[#C10D26] font-bold text-sm" id="GRYFFINDOR-DOB">
-              09/19/1979
-            </p>
-
-            <p class="font-bold">GENDER</p>
-            <p
-              class="text-[#C10D26] font-[griffindor] text-sm"
-              id="GRYFFINDOR-GENDER"
-            >
-              FEMALE
-            </p>
-
-            <p class="font-bold">HOUSE</p>
-            <p class="text-[#C10D26] font-[griffindor] text-sm">GRYFFINDOR</p>
-          </div>
-          <div class="flex flex-row w-[100%] relative">
-            <div class="w-[10%] bg-[#C10D26] h-[80%]"></div>
-            <div class="w-[20%] h-[80%]"></div>
-            <div class="w-[40%] bg-[#C10D26] h-[80%]"></div>
-            <div class="w-[30%] h-[80%]"></div>
-            <img
-              src="https://res.cloudinary.com/dpvacdjua/image/upload/v1736259572/2796360_gryffindor-harry-potter-gryffindor-necklace-transparent-png-removebg-preview_a7e4wy.png"
-              alt=""
-              class="absolute top-6"
-            />
+          <div
+            class="h-[20%] w-full bg-[#710C17] text-[#CA9A2C] font-[griffindor] absolute bottom-0 p-2 text-3xl text-center tracking-widest rounded-b-2xl"
+          >
+            Hogwarts Student ID
           </div>
         </div>
+
         <div
-          class="h-[20%] w-full bg-[#710C17] text-[#CA9A2C] font-[griffindor] absolute bottom-0 p-2 text-3xl text-center tracking-widest rounded-b-2xl"
+          id="SLYTHERIN"
+          class="bg-[#CA9A2C] md:w-[50vw] md:h-[60vh] w-96 h-72 rounded-2xl hidden flex-col relative mb-10"
         >
-          Hogwarts Student ID
+          <div class="grid grid-cols-[1fr_1fr_1fr] w-full h-full">
+            <div class="h-full w-full">
+              <img
+                src="https://media.harrypotterfanzone.com/draco-malfoy-order-of-the-phoenix-portrait-3.jpg"
+                alt=""
+                class="h-full rounded-b-2xl rounded-tl-2xl object-cover"
+                id="SLYTHERIN-IMG"
+              />
+            </div>
+            <div class="p-2 md:pt-10 pt-2">
+              <p class="font-bold">NAME</p>
+              <p
+                class="text-[#17421F] font-[slythrin] text-lg font-bold"
+                id="SLYTHERIN-NAME"
+              >
+                DRACO MALFOY
+              </p>
+
+              <p class="font-bold">DOB</p>
+              <p class="text-[#17421F] text-lg font-bold" id="SLYTHERIN-DOB">
+                09/19/1979
+              </p>
+
+              <p class="font-bold">GENDER</p>
+              <p
+                class="text-[#17421F] font-[slythrin] text-lg font-bold"
+                id="SLYTHERIN-GENDER"
+              >
+                MALE
+              </p>
+
+              <p class="font-bold">HOUSE</p>
+              <p class="text-[#17421F] font-[slythrin] text-lg font-bold">
+                SLYTHERIN
+              </p>
+            </div>
+            <div class="flex flex-row w-[100%] relative">
+              <div class="w-[10%] bg-[#17421F] h-[80%]"></div>
+              <div class="w-[20%] h-[80%]"></div>
+              <div class="w-[40%] bg-[#17421F] h-[80%]"></div>
+              <div class="w-[30%] h-[80%]"></div>
+              <img
+                src="https://res.cloudinary.com/dpvacdjua/image/upload/v1736259571/Harry_Potter_And_The_Philosopher_s_Stone_Sorting_Hat_Slytherin_House_Hogwarts_PNG_-_Free_Download-removebg-preview_wqg6kd.png"
+                class="absolute top-6"
+              />
+            </div>
+          </div>
+          <div
+            class="h-[20%] w-full bg-[#17421F] text-[#CA9A2C] font-[griffindor] absolute bottom-0 p-2 text-3xl text-center tracking-widest rounded-b-2xl"
+          >
+            Hogwarts Student ID
+          </div>
+        </div>
+
+        <div
+          id="HUFFLEPUFF"
+          class="bg-[#CA9A2C] md:w-[50vw] md:h-[60vh] w-96 h-72 rounded-2xl hidden flex-col relative mb-10"
+        >
+          <div class="grid grid-cols-[1fr_1fr_1fr] w-full h-full">
+            <div class="h-full w-full">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1IwhN0mgZDX11RrhuSEQc3_BHMnn4rA72Kg&s"
+                alt=""
+                class="h-full rounded-b-2xl rounded-tl-2xl object-cover"
+                id="HUFFLEPUFF-IMG"
+              />
+            </div>
+            <div class="p-2 md:pt-10 pt-2">
+              <p class="font-bold">NAME</p>
+              <p
+                class="text-[#82471A] font-[hufflepuff] text-lg font-bold"
+                id="HUFFLEPUFF-NAME"
+              >
+                CEDRIC DEGORI
+              </p>
+
+              <p class="font-bold">DOB</p>
+              <p class="text-[#82471A] text-lg font-bold" id="HUFFLEPUFF-DOB">
+                09/19/1979
+              </p>
+
+              <p class="font-bold">GENDER</p>
+              <p
+                class="text-[#82471A] font-[hufflepuff] text-lg font-bold"
+                id="HUFFLEPUFF-GENDER"
+              >
+                MALE
+              </p>
+
+              <p class="font-bold">HOUSE</p>
+              <p class="text-[#82471A] font-[hufflepuff] text-lg font-bold">
+                HUFFLEPUFF
+              </p>
+            </div>
+            <div class="flex flex-row w-[100%] relative">
+              <div class="w-[10%] bg-[#16120F] h-[80%]"></div>
+              <div class="w-[20%] h-[80%]"></div>
+              <div class="w-[40%] bg-[#16120F] h-[80%]"></div>
+              <div class="w-[30%] h-[80%]"></div>
+              <img
+                src="https://res.cloudinary.com/dpvacdjua/image/upload/v1736262834/pngegg-removebg-preview_s7sacv.png"
+                alt=""
+                class="absolute top-6"
+              />
+            </div>
+          </div>
+          <div
+            class="h-[20%] w-full bg-[#16120F] text-[#CA9A2C] font-[griffindor] absolute bottom-0 p-2 text-3xl text-center tracking-widest rounded-b-2xl"
+          >
+            Hogwarts Student ID
+          </div>
+        </div>
+
+        <div
+          id="RAVENCLAW"
+          class="bg-[#005B7E] md:w-[50vw] md:h-[60vh] w-96 h-72 rounded-2xl hidden flex-col relative mb-10"
+        >
+          <div class="grid grid-cols-[1fr_1fr_1fr] w-full h-full">
+            <div class="h-full w-full">
+              <img
+                src="https://i.namu.wiki/i/MROJTzx_vKYuAX2c2Y0Tn9IdYIir_vQDGEsgOqqjgiG4qFHASXCDT1Tt5e1kVUGnRk8SIxJLjLqEHl7meTHk3Q.webp"
+                alt=""
+                class="h-full rounded-b-2xl rounded-tl-2xl object-cover"
+                id="RAVENCLAW-IMG"
+              />
+            </div>
+            <div class="p-2 md:pt-10 pt-2">
+              <p class="font-bold">NAME</p>
+              <p
+                class="text-white font-[ravenclaw] text-lg tracking-wider"
+                id="RAVENCLAW-NAME"
+              >
+                LUNA LOVEGOOD
+              </p>
+
+              <p class="font-bold">DOB</p>
+              <p
+                class="text-white font-bold font-[ravenclaw] text-lg tracking-wider"
+                id="RAVENCLAW-DOB"
+              >
+                09/19/1979
+              </p>
+
+              <p class="font-bold">GENDER</p>
+              <p
+                class="text-white font-[ravenclaw] text-lg tracking-wider"
+                id="RAVENCLAW-GENDER"
+              >
+                FEMALE
+              </p>
+
+              <p class="font-bold">HOUSE</p>
+              <p class="text-white font-[ravenclaw] text-lg tracking-wider">
+                RAVENCLAW
+              </p>
+            </div>
+            <div class="flex flex-row w-[100%] relative">
+              <div class="w-[10%] bg-[#D2D1CA] h-[80%]"></div>
+              <div class="w-[20%] h-[80%]"></div>
+              <div class="w-[40%] bg-[#D2D1CA] h-[80%]"></div>
+              <div class="w-[30%] h-[80%]"></div>
+              <img
+                src="https://res.cloudinary.com/dpvacdjua/image/upload/v1736259572/pngegg__1_-removebg-preview_fuzv1b.png"
+                alt=""
+                class="absolute top-6"
+              />
+            </div>
+          </div>
+          <div
+            class="h-[20%] w-full bg-[#0C2027] text-[#349CCD] font-[griffindor] absolute bottom-0 p-2 text-3xl text-center tracking-widest rounded-b-2xl"
+          >
+            Hogwarts Student ID
+          </div>
         </div>
       </div>
-
-      <div
-        id="SLYTHERIN"
-        class="bg-[#CA9A2C] md:w-[50vw] md:h-[60vh] w-96 h-72 rounded-2xl hidden flex-col relative mb-10"
-      >
-        <div class="grid grid-cols-[1fr_1fr_1fr] w-full h-full">
-          <div class="h-full w-full">
-            <img
-              src="https://media.harrypotterfanzone.com/draco-malfoy-order-of-the-phoenix-portrait-3.jpg"
-              alt=""
-              class="h-full rounded-b-2xl rounded-tl-2xl object-cover"
-              id="SLYTHERIN-IMG"
-            />
-          </div>
-          <div class="p-2 md:pt-10 pt-2">
-            <p class="font-bold">NAME</p>
-            <p
-              class="text-[#17421F] font-[slythrin] text-lg font-bold"
-              id="SLYTHERIN-NAME"
-            >
-              DRACO MALFOY
-            </p>
-
-            <p class="font-bold">DOB</p>
-            <p class="text-[#17421F] text-lg font-bold" id="SLYTHERIN-DOB">
-              09/19/1979
-            </p>
-
-            <p class="font-bold">GENDER</p>
-            <p
-              class="text-[#17421F] font-[slythrin] text-lg font-bold"
-              id="SLYTHERIN-GENDER"
-            >
-              MALE
-            </p>
-
-            <p class="font-bold">HOUSE</p>
-            <p class="text-[#17421F] font-[slythrin] text-lg font-bold">
-              SLYTHERIN
-            </p>
-          </div>
-          <div class="flex flex-row w-[100%] relative">
-            <div class="w-[10%] bg-[#17421F] h-[80%]"></div>
-            <div class="w-[20%] h-[80%]"></div>
-            <div class="w-[40%] bg-[#17421F] h-[80%]"></div>
-            <div class="w-[30%] h-[80%]"></div>
-            <img
-              src="https://res.cloudinary.com/dpvacdjua/image/upload/v1736259571/Harry_Potter_And_The_Philosopher_s_Stone_Sorting_Hat_Slytherin_House_Hogwarts_PNG_-_Free_Download-removebg-preview_wqg6kd.png"
-              class="absolute top-6"
-            />
-          </div>
-        </div>
-        <div
-          class="h-[20%] w-full bg-[#17421F] text-[#CA9A2C] font-[griffindor] absolute bottom-0 p-2 text-3xl text-center tracking-widest rounded-b-2xl"
-        >
-          Hogwarts Student ID
-        </div>
-      </div>
-
-      <div
-        id="HUFFLEPUFF"
-        class="bg-[#CA9A2C] md:w-[50vw] md:h-[60vh] w-96 h-72 rounded-2xl hidden flex-col relative mb-10"
-      >
-        <div class="grid grid-cols-[1fr_1fr_1fr] w-full h-full">
-          <div class="h-full w-full">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1IwhN0mgZDX11RrhuSEQc3_BHMnn4rA72Kg&s"
-              alt=""
-              class="h-full rounded-b-2xl rounded-tl-2xl object-cover"
-              id="HUFFLEPUFF-IMG"
-            />
-          </div>
-          <div class="p-2 md:pt-10 pt-2">
-            <p class="font-bold">NAME</p>
-            <p
-              class="text-[#82471A] font-[hufflepuff] text-lg font-bold"
-              id="HUFFLEPUFF-NAME"
-            >
-              CEDRIC DEGORI
-            </p>
-
-            <p class="font-bold">DOB</p>
-            <p class="text-[#82471A] text-lg font-bold" id="HUFFLEPUFF-DOB">
-              09/19/1979
-            </p>
-
-            <p class="font-bold">GENDER</p>
-            <p
-              class="text-[#82471A] font-[hufflepuff] text-lg font-bold"
-              id="HUFFLEPUFF-GENDER"
-            >
-              MALE
-            </p>
-
-            <p class="font-bold">HOUSE</p>
-            <p class="text-[#82471A] font-[hufflepuff] text-lg font-bold">
-              HUFFLEPUFF
-            </p>
-          </div>
-          <div class="flex flex-row w-[100%] relative">
-            <div class="w-[10%] bg-[#16120F] h-[80%]"></div>
-            <div class="w-[20%] h-[80%]"></div>
-            <div class="w-[40%] bg-[#16120F] h-[80%]"></div>
-            <div class="w-[30%] h-[80%]"></div>
-            <img
-              src="https://res.cloudinary.com/dpvacdjua/image/upload/v1736262834/pngegg-removebg-preview_s7sacv.png"
-              alt=""
-              class="absolute top-6"
-            />
-          </div>
-        </div>
-        <div
-          class="h-[20%] w-full bg-[#16120F] text-[#CA9A2C] font-[griffindor] absolute bottom-0 p-2 text-3xl text-center tracking-widest rounded-b-2xl"
-        >
-          Hogwarts Student ID
-        </div>
-      </div>
-
-      <div
-        id="RAVENCLAW"
-        class="bg-[#005B7E] md:w-[50vw] md:h-[60vh] w-96 h-72 rounded-2xl hidden flex-col relative mb-10"
-      >
-        <div class="grid grid-cols-[1fr_1fr_1fr] w-full h-full">
-          <div class="h-full w-full">
-            <img
-              src="https://i.namu.wiki/i/MROJTzx_vKYuAX2c2Y0Tn9IdYIir_vQDGEsgOqqjgiG4qFHASXCDT1Tt5e1kVUGnRk8SIxJLjLqEHl7meTHk3Q.webp"
-              alt=""
-              class="h-full rounded-b-2xl rounded-tl-2xl object-cover"
-              id="RAVENCLAW-IMG"
-            />
-          </div>
-          <div class="p-2 md:pt-10 pt-2">
-            <p class="font-bold">NAME</p>
-            <p
-              class="text-white font-[ravenclaw] text-lg tracking-wider"
-              id="RAVENCLAW-NAME"
-            >
-              LUNA LOVEGOOD
-            </p>
-
-            <p class="font-bold">DOB</p>
-            <p
-              class="text-white font-bold font-[ravenclaw] text-lg tracking-wider"
-              id="RAVENCLAW-DOB"
-            >
-              09/19/1979
-            </p>
-
-            <p class="font-bold">GENDER</p>
-            <p
-              class="text-white font-[ravenclaw] text-lg tracking-wider"
-              id="RAVENCLAW-GENDER"
-            >
-              FEMALE
-            </p>
-
-            <p class="font-bold">HOUSE</p>
-            <p class="text-white font-[ravenclaw] text-lg tracking-wider">
-              RAVENCLAW
-            </p>
-          </div>
-          <div class="flex flex-row w-[100%] relative">
-            <div class="w-[10%] bg-[#D2D1CA] h-[80%]"></div>
-            <div class="w-[20%] h-[80%]"></div>
-            <div class="w-[40%] bg-[#D2D1CA] h-[80%]"></div>
-            <div class="w-[30%] h-[80%]"></div>
-            <img
-              src="https://res.cloudinary.com/dpvacdjua/image/upload/v1736259572/pngegg__1_-removebg-preview_fuzv1b.png"
-              alt=""
-              class="absolute top-6"
-            />
-          </div>
-        </div>
-        <div
-          class="h-[20%] w-full bg-[#0C2027] text-[#349CCD] font-[griffindor] absolute bottom-0 p-2 text-3xl text-center tracking-widest rounded-b-2xl"
-        >
-          Hogwarts Student ID
-        </div>
-      </div>
-    </div>
 
       <button
-      id="download-pdf"
-      class="bg-red-600 text-white p-2 rounded-md hover:bg-red-500 hidden m-3"
-      onclick="saveDivAsPdf('cards')"
-    >
-      Download PDF
-    </button>
-
-
+        id="download-pdf"
+        class="bg-red-600 text-white p-2 rounded-md hover:bg-red-500 hidden m-3"
+        
+      >
+        Download PDF
+      </button>
     </div>
 
     <div class="bg-[#00171C] p-4 text-white text-center" id="footer">
@@ -1283,73 +1277,10 @@
         });
       });
 
-      function ensureImagesLoaded(callback) {
-    const images = document.querySelectorAll('img');
-    let loadedImages = 0;
-
-    images.forEach(img => {
-      img.onload = function() {
-        loadedImages++;
-        if (loadedImages === images.length) {
-          callback();
-        }
-      };
-      // If image is already cached
-      if (img.complete) {
-        loadedImages++;
-        if (loadedImages === images.length) {
-          callback();
-        }
-      }
-    });
-  }
-
-  function saveDivAsPdf(divId) {
-    // Ensure all images are loaded before proceeding
-    ensureImagesLoaded(function() {
-      // Capture the content of the div as an image using html2canvas
-      html2canvas(document.getElementById(divId), {
-        logging: true,
-        useCORS: true,  // Ensures that external images are captured correctly
-        scale: 2,  // Higher resolution for better image quality
-        allowTaint: true,
-        foreignObjectRendering: true,  // Improved rendering of non-HTML elements like images
-        backgroundColor: null,  // Transparent background
-      }).then(function (canvas) {
-        // Access jsPDF from the window.jspdf object
-        const { jsPDF } = window.jspdf;
-        const doc = new jsPDF();
-
-        // A4 page dimensions in mm (210mm x 297mm)
-        const pageWidth = doc.internal.pageSize.width; // A4 width in points (approx 210mm)
-        const pageHeight = doc.internal.pageSize.height; // A4 height in points (approx 297mm)
-
-        // Calculate scale factor based on the canvas size and PDF page size
-        const scaleX = pageWidth / canvas.width;
-        const scaleY = pageHeight / canvas.height;
-
-        // Use the smaller scale factor to maintain aspect ratio
-        const scaleFactor = Math.min(scaleX, scaleY);
-
-        // Calculate the dimensions of the image to fit the page
-        const imgWidth = canvas.width * scaleFactor;
-        const imgHeight = canvas.height * scaleFactor;
-
-        // Convert the canvas image to a data URL
-        const imgData = canvas.toDataURL('image/png');
-
-        // Add the image to the PDF (adjust position and size)
-        doc.addImage(imgData, 'PNG', 10, 10, imgWidth, imgHeight);
-
-        // Save the generated PDF
-        doc.save('div-content.pdf');
-      }).catch(function (error) {
-        console.error("Error capturing div content: ", error);
-      });
-    });
-  }
     </script>
 
     <script src="index.js"></script>
+
+    <!-- <script src="app.js"></script> -->
   </body>
 </html>
