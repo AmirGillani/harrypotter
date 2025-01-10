@@ -768,10 +768,6 @@ video {
   width: 4rem;
 }
 
-.w-32 {
-  width: 8rem;
-}
-
 .w-48 {
   width: 12rem;
 }
@@ -932,6 +928,10 @@ video {
   justify-content: space-evenly;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -1037,11 +1037,6 @@ video {
   background-color: rgb(23 66 31 / var(--tw-bg-opacity, 1));
 }
 
-.bg-\[\#2ed0e2\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(46 208 226 / var(--tw-bg-opacity, 1));
-}
-
 .bg-\[\#40d2f3\] {
   --tw-bg-opacity: 1;
   background-color: rgb(64 210 243 / var(--tw-bg-opacity, 1));
@@ -1120,16 +1115,6 @@ video {
 
 .p-5 {
   padding: 1.25rem;
-}
-
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
 
 .pb-5 {
@@ -1347,11 +1332,6 @@ video {
   cursor: url('https://res.cloudinary.com/dpvacdjua/image/upload/v1736041870/cursor_gycmys.png') 16 16, auto;
 }
 
-.hover\:bg-\[\#228a96\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(34 138 150 / var(--tw-bg-opacity, 1));
-}
-
 .hover\:bg-\[\#30a5b3\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(48 165 179 / var(--tw-bg-opacity, 1));
@@ -1392,24 +1372,12 @@ video {
     height: 100vh;
   }
 
-  .md\:h-\[115vh\] {
-    height: 115vh;
-  }
-
-  .md\:h-\[30vh\] {
-    height: 30vh;
-  }
-
   .md\:h-\[60vh\] {
     height: 60vh;
   }
 
   .md\:h-\[70vh\] {
     height: 70vh;
-  }
-
-  .md\:h-\[80vh\] {
-    height: 80vh;
   }
 
   .md\:h-screen {
@@ -1474,16 +1442,6 @@ video {
 
   .md\:pt-10 {
     padding-top: 2.5rem;
-  }
-
-  .md\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  .md\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 
   .md\:text-xl {
