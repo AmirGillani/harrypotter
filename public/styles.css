@@ -612,20 +612,12 @@ video {
   left: 0px;
 }
 
-.left-4 {
-  left: 1rem;
-}
-
 .top-5 {
   top: 1.25rem;
 }
 
 .top-6 {
   top: 1.5rem;
-}
-
-.top-\[45vh\] {
-  top: 45vh;
 }
 
 .z-10 {
@@ -708,6 +700,14 @@ video {
   height: 20rem;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
+.h-\[0\.1rem\] {
+  height: 0.1rem;
+}
+
 .h-\[100\%\] {
   height: 100%;
 }
@@ -732,6 +732,10 @@ video {
   height: 400px;
 }
 
+.h-\[50\%\] {
+  height: 50%;
+}
+
 .h-\[50vh\] {
   height: 50vh;
 }
@@ -744,6 +748,10 @@ video {
   height: 85%;
 }
 
+.h-\[90\%\] {
+  height: 90%;
+}
+
 .h-auto {
   height: auto;
 }
@@ -752,8 +760,8 @@ video {
   height: 100%;
 }
 
-.h-screen {
-  height: 100vh;
+.w-0 {
+  width: 0px;
 }
 
 .w-16 {
@@ -800,10 +808,6 @@ video {
   width: 300px;
 }
 
-.w-\[30rem\] {
-  width: 30rem;
-}
-
 .w-\[40\%\] {
   width: 40%;
 }
@@ -832,8 +836,12 @@ video {
   width: 100%;
 }
 
-.w-screen {
-  width: 100vw;
+.max-w-\[80\%\] {
+  max-width: 80%;
+}
+
+.max-w-full {
+  max-width: 100%;
 }
 
 .flex-shrink-0 {
@@ -1034,6 +1042,11 @@ video {
   background-color: rgb(46 208 226 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[\#40d2f3\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(64 210 243 / var(--tw-bg-opacity, 1));
+}
+
 .bg-\[\#40d2f3\]\/15 {
   background-color: rgb(64 210 243 / 0.15);
 }
@@ -1056,16 +1069,6 @@ video {
 .bg-\[\#D2D1CA\] {
   --tw-bg-opacity: 1;
   background-color: rgb(210 209 202 / var(--tw-bg-opacity, 1));
-}
-
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
-}
-
-.bg-gray-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
 }
 
 .bg-red-600 {
@@ -1326,12 +1329,22 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.cursor-custom {
-  cursor: url('https://res.cloudinary.com/dpvacdjua/image/upload/v1736041870/cursor_gycmys.png') 16 16, auto;
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
-.hover\:cursor-pointer:hover {
-  cursor: pointer;
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cursor-custom {
+  cursor: url('https://res.cloudinary.com/dpvacdjua/image/upload/v1736041870/cursor_gycmys.png') 16 16, auto;
 }
 
 .hover\:bg-\[\#228a96\]:hover {
@@ -1358,22 +1371,21 @@ video {
   color: rgb(156 163 175 / var(--tw-text-opacity, 1));
 }
 
-.hover\:text-gray-500:hover {
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity, 1));
+.hover\:opacity-75:hover {
+  opacity: 0.75;
+}
+
+.group:hover .group-hover\:w-full {
+  width: 100%;
 }
 
 @media (min-width: 768px) {
-  .md\:left-96 {
-    left: 24rem;
-  }
-
-  .md\:left-\[25rem\] {
-    left: 25rem;
-  }
-
   .md\:top-5 {
     top: 1.25rem;
+  }
+
+  .md\:top-\[45vh\] {
+    top: 45vh;
   }
 
   .md\:h-\[100vh\] {
@@ -1400,6 +1412,10 @@ video {
     height: 80vh;
   }
 
+  .md\:h-screen {
+    height: 100vh;
+  }
+
   .md\:w-12 {
     width: 3rem;
   }
@@ -1408,12 +1424,28 @@ video {
     width: 15rem;
   }
 
+  .md\:w-\[30rem\] {
+    width: 30rem;
+  }
+
   .md\:w-\[40\%\] {
     width: 40%;
   }
 
   .md\:w-\[50vw\] {
     width: 50vw;
+  }
+
+  .md\:w-screen {
+    width: 100vw;
+  }
+
+  .md\:max-w-\[50vw\] {
+    max-width: 50vw;
+  }
+
+  .md\:max-w-\[80\%\] {
+    max-width: 80%;
   }
 
   .md\:grid-cols-2 {
