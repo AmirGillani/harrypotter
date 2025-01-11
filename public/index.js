@@ -8,6 +8,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const downloadPdf = document.getElementById("download-pdf");
 
+  const fadeElements = document.querySelectorAll(".fadeout-element");
+
+  const observerOptions = {
+    threshold: 0.5, // Element will trigger when 50% of it is in the viewport
+  };
+
+  const fadeInObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // Add animation class when the element is in view
+        entry.target.classList.remove("opacity-0");
+        entry.target.classList.add("animate-fadeOut");
+        observer.unobserve(entry.target); // Stop observing after animation
+      }
+    });
+  }, observerOptions);
+
+  fadeElements.forEach((element) => {
+    fadeInObserver.observe(element);
+  });
+
+
+
   let house;
 
   let photo;
@@ -110,5 +133,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.getElementById("download-pdf").style.display = "block";
   });
-
 });

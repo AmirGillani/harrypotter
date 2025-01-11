@@ -230,7 +230,7 @@
         class="grid md:grid-cols-3 grid-cols-1 gap-2 w-[80%] m-auto bg-[#00171C] p-10"
       >
         <!-- Gallery Thumbnails -->
-        <div class="w-full">
+        <div class="w-full fadeout-element opacity-0">
           <img
             src="https://images8.alphacoders.com/113/1130048.jpg"
             alt="Movie 1"
@@ -240,7 +240,7 @@
           <h2 class="text-white">1- PILOSOPHER STONE</h2>
         </div>
 
-        <div class="w-full">
+        <div class="w-full fadeout-element opacity-0">
           <img
             src="https://images8.alphacoders.com/113/1130057.jpg"
             alt="Movie 2"
@@ -250,7 +250,7 @@
           <h2 class="text-white">2- CHAMBER OF SECRETS</h2>
         </div>
 
-        <div class="w-full">
+        <div class="w-full fadeout-element opacity-0">
           <img
             src="https://images3.alphacoders.com/113/1130058.jpg"
             alt="Movie 3"
@@ -260,7 +260,7 @@
           <h2 class="text-white">3- PRISONER OF AZKABAN</h2>
         </div>
 
-        <div class="w-full">
+        <div class="w-full fadeout-element opacity-0">
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1DTlv-PTWmmhJWOJGALvJe8ccbytTT66Xwg&s"
             alt="Movie 4"
@@ -270,7 +270,7 @@
           <h2 class="text-white">4- GOBLET OF FIRE</h2>
         </div>
 
-        <div class="w-full">
+        <div class="w-full fadeout-element opacity-0">
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Eqk7am6_hnggpEEa1KStmkAyIyBb5TesEw&s"
             alt="Movie 5"
@@ -280,7 +280,7 @@
           <h2 class="text-white">5- ORDER OF PHOENIX</h2>
         </div>
 
-        <div class="w-full">
+        <div class="w-full fadeout-element opacity-0">
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9vCi_egsDYKurY9IVVsfXuYz34LhS5ZAIyw&s"
             alt="Movie 6"
@@ -290,7 +290,7 @@
           <h2 class="text-white">6- HALF BLOOD PRINCE</h2>
         </div>
 
-        <div class="w-full">
+        <div class="w-full fadeout-element opacity-0">
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTgpeVP7DzyirChWtkchH7y0S5lFDdXa72QQ&s"
             alt="Movie 7"
@@ -1678,11 +1678,36 @@
               >UPLOAD YOUR PHOTO (OPTIONAL)</label
             >
 
-            <input
-              type="file"
-              id="photo"
-              class="text-xl text-center w-full rounded-lg p-4 text-white"
-            />
+            <div class="file-upload">
+              <!-- Hidden file input -->
+              <input
+                type="file"
+                id="file-upload"
+                class="file-upload-input hidden"
+              />
+              <!-- Custom file upload button with an icon -->
+              <label
+                for="file-upload"
+                class="file-upload-label inline-flex items-center space-x-2 bg-[#00171C] text-white py-2 px-4 w-48 cursor-pointer hover:bg-[#0b262c] transition"
+              >
+                <!-- Icon (using Heroicons or any icon library) -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-5 h-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 4v16m8-8H4"
+                  />
+                </svg>
+                <span>Choose File</span>
+              </label>
+            </div>
 
             <button
               type="submit"
