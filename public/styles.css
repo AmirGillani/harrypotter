@@ -732,10 +732,6 @@ video {
   height: 20;
 }
 
-.h-\[20vh\] {
-  height: 20vh;
-}
-
 .h-\[32rem\] {
   height: 32rem;
 }
@@ -1107,6 +1103,11 @@ video {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.object-fill {
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .p-10 {
